@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign up form validation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../static/css/auth.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>CREATE ACCOUNT</h2>
+        </div>
+    <form class="form" id="form" method="POST" action="/signup">
+            <div class="form-control ">
+                <label>Username</label>
+                <input type="text" placeholder="beautyndbeast" id="username" name="username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control ">
+                <label>Email</label>
+                <input type="email" placeholder="dead@gmail.com" id="email" name="email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="paasword" id="password" name="password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="password " id="confirm">
+                <small>Error Message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="../static/js/signUp.js"></script>
+</body>
+
+</html>
