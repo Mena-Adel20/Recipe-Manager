@@ -1,3 +1,4 @@
+
 import json
 from datetime import datetime
 
@@ -7,25 +8,24 @@ class User:
         self.email = email
         self.date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    def add_user(self, password, username):
     # Load existing user data from file
+    def add_user(self, password, username):
         try:
             with open(self.filename, 'r') as infile:
-                # Check if file is empty
-                if infile.read().strip():  # If the file is not empty
-                    infile.seek(0)  # Go back to the beginning of the file after the check
+                if infile.read().strip():
+                    infile.seek(0)
                     data = json.load(infile)
                 else:
-                    data = []  # Initialize empty list if file is empty
-        except json.JSONDecodeError:
-            data = []  # If file is empty or invalid, initialize empty list
+                    data = []
+        except (FileNotFoundError, json.JSONDecodeError):
+            data = []
 
         # Check if email already exists
         for user in data:
             if user['email'] == self.email:
                 return 'Email already exists. Please use a different email address.'
 
-        # Create new user 
+        # Create new user
         new_user = {"email": self.email, "pass": password, "user": username, "date": self.date, "favorites": []}
         data.append(new_user)
 
