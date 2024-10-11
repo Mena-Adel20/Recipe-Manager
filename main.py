@@ -1,29 +1,28 @@
-from flask import Flask, request, jsonify
-from user import User  # Importing the User class from the separate file
-
+from flask import Flask, request, render_template, redirect, url_for, flash
+import json
+from datetime import datetime
+import User
 app = Flask("main")
+app.secret_key = 'otaku'  
+@app.route('/')
+def index():
+    return render_template('index.html')  
 
-# Define the filename where user data will be stored
-FILENAME = 'users_data.json'
-
-@app.route('/signup', methods=['POST'])
+@app.route('/signup', methods=['GET', 'POST'])
 def signup():
-    # extracts JSON data from the body of the incoming HTTP request
-    data = request.get_json()
-    
-    # This line checks whether the required fields are  in  data 
-    if not all(key in data for key in ['email', 'password', 'username']):
-        return jsonify({'error': 'Missing parameters'}), 400
-    
-    # Create a User object and try to add the user
-    user_manager = User(filename=FILENAME, email=data['email'])
-    result = user_manager.add_user(password=data['password'], username=data['username'])
+    validation_message = None
 
-    if result is None:
-        return jsonify({'message': 'User signed up successfully'}), 200
-    else:
-        return jsonify({'error': result}), 400
+    if request.method == 'POST':
+        # Retrieve data from the form
+        username = request.form['username']
+        password = request.form['password']
+        email = request.form['email']   
+        error = User.User('users.json', email).add_user(password, username)
 
+        if error:
+           return render_template('signup.html', validation_message=error) # Return an error message with a 400 status code
 
+        return redirect(url_for('index'))
+    return render_template('signup.html', validation_message=validation_message)
 if __name__ == '__main__':
     app.run(debug=True)
