@@ -1,3 +1,4 @@
+import flask 
 from flask import Flask, request, render_template, redirect, url_for, flash
 import json
 from datetime import datetime
@@ -24,5 +25,22 @@ def signup():
 
         return redirect(url_for('index'))
     return render_template('signup.html', validation_message=validation_message)
+
+
+#routing to login page
+@app.route("/home")
+def home():
+    return render_template("index.html")
+
+#routing to all category page
+@app.route("/category")
+def category():
+    # Open and read the categories  from the JSON file
+    with open("categories.json", "r") as json_file:
+        categories_data = json.load(json_file)
+    
+    return flask.render_template("categories.html", categories=categories_data["categories"])
+
+   
 if __name__ == '__main__':
     app.run(debug=True)
