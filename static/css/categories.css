@@ -1,0 +1,92 @@
+body {
+    background-color: #1F2B3A;
+    /* Slightly lighter dark blue-gray for better contrast */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #E1E6ED;
+    /* Softer light gray for a more inviting look */
+    margin-bottom: 40px;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-card {
+    background: linear-gradient(to right, #2A3D52, #344B62, #2A3D52);
+    /* A more varied gradient with distinct hues */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    /* Slightly softer shadow */
+    border-radius: 8px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    height: calc(33.33% - 20px);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.category-details {
+    padding: 20px;
+}
+
+.category-details h2 {
+    margin-top: 0;
+    color: #F0F0F0;
+    /* Slightly brighter gray for better readability */
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.category-details a {
+    display: inline-block;
+    background-color: #344B62;
+    /* Richer blue for consistency */
+    border: 1px solid #E1E6ED;
+    /* Softer border color */
+    color: #E1E6ED;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.category-details a:hover {
+    background-color: #4C6B9C;
+    /* A brighter shade on hover for a vibrant look */
+}
+
+@media screen and (max-width: 768px) {
+    .category-card {
+        width: calc(50% - 40px);
+        height: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .category-card {
+        width: calc(100% - 40px);
+        height: auto;
+    }
+}
