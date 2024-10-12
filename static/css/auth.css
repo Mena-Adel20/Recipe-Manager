@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: #8e89cf;
+    background-color: #1F2B3A;
+    /* Darker background color for the body */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +13,8 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #2C3E50;
+    /* Darker container background */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 400px;
@@ -21,18 +23,21 @@ body {
 }
 
 .header {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #f0f0f0;
+    background-color: #34495E;
+    /* Darker header background */
+    border-bottom: 1px solid #2C3E50;
+    /* Matching border color */
     padding: 20px 40px;
 }
 
 .header h2 {
     margin: 0;
+    color: #DDE4ED;
+    /* Light gray for header text */
 }
 
 .form {
     padding: 30px 40px;
-
 }
 
 .form-control {
@@ -44,16 +49,22 @@ body {
 .form-control label {
     display: inline-block;
     margin-bottom: 5px;
+    color: #DDE4ED;
+    /* Light gray for labels */
 }
 
 .form-control input {
-    border: 2px solid #f0f0f0;
+    border: 2px solid #2C3E50;
+    /* Darker border color */
     border-radius: 4px;
     display: block;
     font-size: 14px;
     width: 100%;
     padding: 10px;
-
+    background-color: #1F2B3A;
+    /* Matching dark background */
+    color: #DDE4ED;
+    /* Light gray for input text */
 }
 
 .form-control i {
@@ -68,40 +79,52 @@ body {
     bottom: 0;
     left: 0;
     visibility: hidden;
+    color: #e74c3c;
+    /* Error color */
 }
 
 .form button {
-    background-color: #8e44fd;
-    border: 2px solid #8e44fd;
+    background-color: #0e5a90;
+    /* Retaining button color for consistency */
+    border: 2px solid #075c99;
     color: #fff;
     display: block;
     padding: 10px;
     width: 100%;
     font-size: 16px;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #032842;
+    /* Darker shade on hover */
 }
 
 .form-control.success input {
     border-color: #2ecc71;
+    /* Success color */
 }
 
 .form-control.error input {
     border-color: #e74c3c;
+    /* Error color */
 }
 
 .form-control.success i.fa-check-circle {
     visibility: visible;
     color: #2ecc71;
-
+    /* Success icon color */
 }
 
 .form-control.error i.fa-exclamation-circle {
     visibility: visible;
     color: #e74c3c;
-
+    /* Error icon color */
 }
 
 .form-control.error small {
     visibility: visible;
     color: #e74c3c;
+    /* Error message color */
 }
