@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category</title>
+    <link rel="stylesheet" href="../static/css/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+    {% if recipes %}
+    <h1 style="margin: 20px;">{{recipes[0].categoryName}}</h1>
+    <div id="recipes-container">
+        {% for recipe in recipes %}
+        <div class="recipe-list-card" data-id="{{recipe['id']}}">
+            <img src="{{ recipe['imgLink'] }}" alt="{{ recipe['recipe_name'] }}" class="recipe-image">
+            <div class="recipe-details">
+                <div class="recipe-details">
+                    <h2>{{ recipe.recipe_name }}</h2>
+                    <div class="category">
+                        <i class="fas fa-utensils"></i>
+                        <p>{{ recipe.cuisine }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="placeholder">
+            <img src="../static/images/back.jpeg" style="width: 45%;">
+            <p> No Recipe Found </p>
+        </div>
+        {% endif %}
+    <script src="../static/js/categories.js"></script>
+
+    </div>
+
+</body>
+
+</html>
