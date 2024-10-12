@@ -15,6 +15,18 @@ h1 {
     /* Softer light gray for a more inviting look */
     margin-bottom: 40px;
 }
+h1 {
+    text-align: center;
+    color: #E1E6ED;
+    /* Softer light gray for a more inviting look */
+    margin-bottom: 40px;
+}
+h2 {
+    text-align: center;
+    color: #E1E6ED;
+    /* Softer light gray for a more inviting look */
+    margin-bottom: 40px;
+}
 
 .category-container {
     display: flex;
