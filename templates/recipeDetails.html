@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="../static/css/recipeDetails.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>{{ data.recipe_name }}</h1>
+            <div class="ingredients">
+                <h2>Ingredients:</h2>
+                <ul>
+                    {% for ingredient in data.ingredients %}
+                    <li><i class="fas fa-utensils"></i> {{ ingredient.name }} - {{ ingredient.measurement }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2>Instructions:</h2>
+                <p>{{ data.instructions }}</p>
+            </div>
+            <div class="time">
+                <h2>time:</h2>
+                <p>{{ data.time }}</p>
+            </div>
+          
+        </div>
+
+
+        <div class="right-side">
+            <img src="{{ data.imgLink }}" alt="{{ data.recipe_name }}">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
