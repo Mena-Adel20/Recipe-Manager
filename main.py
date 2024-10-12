@@ -66,5 +66,27 @@ def category_name(category_name):
     return render_template("categoryDetails.html", recipes=filtered_recipes)
 
    
+#**********************************************************************************
+
+@app.route("/recipe-details/<id>")
+def recipe_details(id):
+    # load the recipes  
+    with open("recipes.json", "r") as json_file:
+        recipes_data = json.load(json_file)
+    
+        recipe = None
+    
+    # Iterate recipe in the recipes data
+    for r in recipes_data["recipes"]:
+        # Check if the ID of the recipe matches the provided ID
+        if r["id"] == id:
+            recipe = r
+            break
+    
+
+    
+    
+    return render_template("recipeDetails.html", data=recipe)
+
 if __name__ == '__main__':
     app.run(debug=True)
