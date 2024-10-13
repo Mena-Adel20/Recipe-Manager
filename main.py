@@ -3,8 +3,16 @@ from flask import Flask, request, render_template, redirect, url_for, flash
 import json
 from datetime import datetime
 import User
+import os
+from werkzeug.utils import secure_filename
+
 app = Flask("main")
-app.secret_key = 'otaku'  
+app.secret_key = 'otaku'
+
+# Directory where the uploaded images will be saved
+UPLOAD_FOLDER = r"D:\RC\Recipe-Manager\static\uploads"
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 @app.route('/')
 def index():
     return render_template('index.html')  
@@ -83,10 +91,77 @@ def recipe_details(id):
             recipe = r
             break
     
-
-    
     
     return render_template("recipeDetails.html", data=recipe)
+#**********************************************************************************
+
+def get_next_recipe_id():
+    # Load existing recipes and find the next available ID
+    with open('recipes.json', 'r') as f:
+        data = json.load(f)
+        
+        if data['recipes']:
+            # Find the maximum ID in the existing recipes
+            max_id = max(int(recipe['id']) for recipe in data['recipes'])
+            return max_id + 1
+        else:
+            return 1  # Start with ID 1 if no recipes exist  
+        
+
+@app.route('/addrecipe', methods=['GET', 'POST'])
+def addrecipe():
+    if request.method == 'POST':
+        recipe_name = request.form['recipeName']
+        category = request.form['category']
+        cuisine = request.form['cuisine']
+        ingredients_names = request.form.getlist('ingredientName[]')
+        ingredients_measurements = request.form.getlist('ingredientMeasurement[]')
+        instructions = request.form['instructions']
+        time = request.form['time']
+        
+        # Handle image upload
+        photo = request.files['photo']
+        photo_filename = None
+        if photo:
+            photo_filename = os.path.join(app.config['UPLOAD_FOLDER'], photo.filename)
+            photo.save(photo_filename)
+            photo_filename = f'../static/uploads/{photo.filename}'
+
+        # Combine ingredients into a list of dictionaries
+        ingredients = [{"name": name, "measurement": measurement} for name, measurement in zip(ingredients_names, ingredients_measurements)]
+
+        # Get the next available recipe ID
+        new_id = get_next_recipe_id()
+
+        # Create new recipe data
+        new_recipe = {
+            "id": str(new_id),  # Use the new ID
+            "recipe_name": recipe_name,
+            "categoryName": category,
+            "cuisine": cuisine,
+            "ingredients": ingredients,
+            "instructions": instructions,
+            "time": time,
+            "imgLink": photo_filename
+        }
+
+        # Append the new recipe to the JSON file
+        with open('recipes.json', 'r+') as f:
+            data = json.load(f)
+            data['recipes'].append(new_recipe)
+
+            # Write updated data back to the JSON file
+            f.seek(0)  # Reset the file pointer to the beginning
+            json.dump(data, f, indent=4)
+            f.flush()  # Ensure it's written to the file system
+            f.truncate()  # Remove any leftover content
+
+        return redirect(url_for('index'))  # Redirect back to the home page
+
+    return render_template('addRecipe.html')
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
