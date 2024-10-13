@@ -1,0 +1,165 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #1F2B3A;
+    /* Dark background color */
+    color: #DDE4ED;
+    /* Light gray text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Modern font */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin: 20px;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.right-side {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.right-side img {
+    width: 80%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Makes the image circular */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    /* Slightly softer shadow */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.right-side img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the image on hover */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.8);
+    /* Darker shadow on hover */
+}
+
+h2 {
+    color: #DDE4ED;
+    /* Light gray for headings */
+}
+
+label {
+    color: #DDE4ED;
+    /* Light gray for labels */
+    font-weight: bold;
+    /* Bold labels */
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    /* Full width minus padding */
+    padding: 10px;
+    /* Padding for inputs */
+    border: 1px solid #ccc;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Spacing below inputs */
+    background: #27355A;
+    /* Dark background for inputs */
+    color: #DDE4ED;
+    /* Light gray text in inputs */
+}
+
+button {
+    background-color: #b15709;
+    /* Golden accent color */
+    color: #DDE4ED;
+    /* Light gray text */
+    border: none;
+    /* No border */
+    padding: 10px 15px;
+    /* Padding for button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #8b3f00;
+    /* Darker shade on hover */
+}
+
+#ingredients {
+    margin: 10px 0;
+    /* Margin for ingredients section */
+}
+
+.ingredient {
+    display: flex;
+    /* Flexbox for ingredients input */
+    align-items: center;
+    /* Center align items */
+    margin-bottom: 10px;
+    /* Space between ingredient inputs */
+}
+
+.ingredient input[type="text"] {
+    margin-right: 10px;
+    /* Space between inputs */
+    flex: 1;
+    /* Allow inputs to grow */
+}
+
+.remove-button {
+    background-color: #ff4c4c;
+    /* Red color for remove button */
+    color: white;
+    /* White text */
+    padding: 5px 10px;
+    /* Padding for button */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: none;
+    /* No border */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    display: none;
+    /* Hidden by default */
+}
+
+.remove-button:hover {
+    background-color: #cc0000;
+    /* Darker red on hover */
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Stack on smaller screens */
+        align-items: center;
+        /* Center align */
+    }
+
+    .right-side img {
+        width: 60%;
+        /* Smaller image on mobile */
+        border-radius: 50%;
+        /* Keep circular shape */
+    }
+}
