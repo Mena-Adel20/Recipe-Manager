@@ -1,5 +1,5 @@
 import flask 
-from flask import Flask, request, render_template, redirect, url_for, flash
+from flask import Flask, request, render_template, redirect, url_for, flash,session
 import json
 from datetime import datetime
 import User
@@ -13,9 +13,9 @@ app.secret_key = 'otaku'
 UPLOAD_FOLDER = r"D:\RC\Recipe-Manager\static\uploads"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-@app.route('/')
-def index():
-    return render_template('index.html')  
+# @app.route('/')
+# def index():
+#     return render_template('index.html')  
 
 #**********************************************************************************
 
@@ -27,16 +27,50 @@ def signup():
         # Retrieve data from the form
         username = request.form['username']
         password = request.form['password']
-        email = request.form['email']   
+        email = request.form['email']
+        
+        # Check if the email exists before adding the user
         error = User.User('users.json', email).add_user(password, username)
-
+        
+        # If an error occurs (email already exists), render the signup page with the error message
         if error:
-           return render_template('signup.html', validation_message=error) # Return an error message with a 400 status code
+            validation_message = "Email already exists. Please try a different one."
+            return render_template('signup.html', validation_message=validation_message)
 
-        return redirect(url_for('index'))
+        # If no error, proceed to the login page
+        return redirect(url_for('login'))
+    
     return render_template('signup.html', validation_message=validation_message)
 
+
 #**********************************************************************************
+
+@app.route("/", methods=["POST", "GET"])
+def login():
+    validation_message = None
+
+    if request.method == "POST":
+        email = request.form['email']
+        password = request.form['password']
+
+        # Read user data from the JSON file
+        with open('users.json', 'r') as infile:
+            data = json.load(infile)
+
+        # Check if the provided email and password match any user in the data
+        for user in data:
+            if user['email'] == email and user['pass'] == password:
+                # If match is found, set the email in the session and redirect to the home page
+                # session['email'] = email
+                return redirect(url_for('home'))
+
+        # If no match is found, set validation message
+        validation_message = "Invalid email or password. Please try again."
+        print(validation_message)  # Debugging: See if message is set
+
+
+    # Pass validation message to the template
+    return render_template('login.html', validation_message=validation_message)
 
 #routing to login page
 @app.route("/home")
