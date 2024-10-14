@@ -1,0 +1,176 @@
+body {
+    width: 100%;
+    height: auto;
+    background: #1F2B3A;
+    /* Dark background color */
+    color: #DDE4ED;
+    /* Light gray text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Modern font */
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #DDE4ED;
+    /* Light gray for headings */
+}
+
+h2 {
+    color: #DDE4ED;
+    /* Light gray for subheadings */
+}
+
+form {
+    background: #27355A;
+    /* Darker background for the form */
+    padding: 20px;
+    /* Padding around the form */
+    border-radius: 10px;
+    /* Rounded corners for the form */
+    margin: 0 auto;
+    /* Center the form */
+    max-width: 600px;
+    /* Maximum width for the form */
+}
+
+.checkbox-container {
+    display: flex;
+    /* Use flexbox for side-by-side layout */
+    justify-content: space-between;
+    /* Space between sections */
+}
+
+.cuisine-section,
+.time-section {
+    width: 48%;
+    /* Each section takes up nearly half the container */
+}
+
+label {
+    color: #DDE4ED;
+    /* Light gray for labels */
+    font-weight: normal;
+    /* Regular weight for labels */
+    display: block;
+    /* Block display for labels */
+    margin-bottom: 10px;
+    /* Space below labels */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    /* Space between checkbox and label */
+}
+
+button {
+    background-color: #b15709;
+    /* Golden accent color */
+    color: #DDE4ED;
+    /* Light gray text */
+    border: none;
+    /* No border */
+    padding: 10px 15px;
+    /* Padding for button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+    display: block;
+    /* Make button a block element */
+    margin: 20px auto;
+    /* Center the button */
+}
+
+button:hover {
+    background-color: #8b3f00;
+    /* Darker shade on hover */
+}
+
+#recipe-list {
+    display: flex;
+    /* Flexbox for recipe list */
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center align items */
+    margin-top: 20px;
+    /* Space above the recipe list */
+}
+
+.recipe-card {
+    background: #27355A;
+    /* Dark background for recipe cards */
+    border-radius: 10px;
+    /* Rounded corners for recipe cards */
+    margin: 10px;
+    /* Margin between cards */
+    padding: 10px;
+    /* Padding inside cards */
+    width: 200px;
+    /* Fixed width for cards */
+    text-align: center;
+    /* Center align text */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* Shadow for cards */
+}
+
+.recipe-card img {
+    width: 100%;
+    /* Full width for images */
+    border-radius: 10px;
+    /* Rounded corners for images */
+}
+
+.recipe-card h3 {
+    color: #DDE4ED;
+    /* Light gray for recipe titles */
+    margin: 10px 0;
+    /* Margin above and below titles */
+}
+
+.recipe-card a {
+    color: #b15709;
+    /* Golden accent color for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold links */
+}
+
+.recipe-card a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    #recipe-list {
+        flex-direction: column;
+        /* Stack cards on smaller screens */
+        align-items: center;
+        /* Center align cards */
+    }
+
+    .recipe-card {
+        width: 90%;
+        /* Full width on mobile */
+        margin: 10px 0;
+        /* Vertical margin for spacing */
+    }
+
+    .checkbox-container {
+        flex-direction: column;
+        /* Stack sections on smaller screens */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    .cuisine-section,
+    .time-section {
+        width: 100%;
+   
+    }
+}
