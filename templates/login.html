@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/auth.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+
+        <form id="loginForm" class="form" action="/" method="POST">
+            <!-- Display error message from Flask if validation fails -->
+            {% if validation_message %}
+            <div class="error-message">
+                <small>{{ validation_message }}</small>
+            </div>
+            {% endif %}
+
+            <div class="form-control">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="email" placeholder="Enter your email">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Enter your password">
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="../static/js/login.js"></script>
+</body>
+
+</html>
