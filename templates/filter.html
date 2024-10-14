@@ -1,42 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Filter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Filter</title>
+<link rel="stylesheet" href="../static/css/filter.css">
 </head>
 
 <body>
     <h1>Recipe Filter</h1>
-    <form id="filter-form">
-        <h2>Cuisine</h2>
-        <label><input type="checkbox" name="cuisine" value="Egyptian"> Egyptian</label>
-        <label><input type="checkbox" name="cuisine" value="Italian"> Italian</label>
-        <label><input type="checkbox" name="cuisine" value="Chinese"> Chinese</label>
-        <label><input type="checkbox" name="cuisine" value="American"> American</label>
-        <label><input type="checkbox" name="cuisine" value="Indian"> Indian</label>
-        <label><input type="checkbox" name="cuisine" value="Greek"> Greek</label>
-        <label><input type="checkbox" name="cuisine" value="Spanish"> Spanish</label>
-        <label><input type="checkbox" name="cuisine" value="Japanese"> Japanese</label>
-        <label><input type="checkbox" name="cuisine" value="British"> British</label>
+    <form id="filter-form" method="GET" action="/filter">
+        <div class="checkbox-container">
+            <div class="cuisine-section">
+                <h2>Cuisine</h2>
+                <label><input type="checkbox" name="cuisine" value="Egyptian"> Egyptian</label>
+                <label><input type="checkbox" name="cuisine" value="Italian"> Italian</label>
+                <label><input type="checkbox" name="cuisine" value="Chinese"> Chinese</label>
+                <label><input type="checkbox" name="cuisine" value="American"> American</label>
+                <label><input type="checkbox" name="cuisine" value="Indian"> Indian</label>
+                <label><input type="checkbox" name="cuisine" value="Greek"> Greek</label>
+                <label><input type="checkbox" name="cuisine" value="Spanish"> Spanish</label>
+                <label><input type="checkbox" name="cuisine" value="Japanese"> Japanese</label>
+                <label><input type="checkbox" name="cuisine" value="British"> British</label>
+            </div>
 
-
-        <h2>Time</h2>
-        <label><input type="checkbox" name="time" value="15 minutes"> 15 minutes</label>
-        <label><input type="checkbox" name="time" value="20 minutes"> 20 minutes</label>
-        <label><input type="checkbox" name="time" value="30 minutes"> 30 minutes</label>
-        <label><input type="checkbox" name="time" value="40 minutes"> 40 minutes</label>
-        <label><input type="checkbox" name="time" value="50 minutes"> 50 minutes</label>
-        <label><input type="checkbox" name="time" value="60 minutes"> 60 minutes</label>
-
-
+            <div class="time-section">
+                <h2>Time</h2>
+                <label><input type="checkbox" name="time" value="15 minutes"> 15 minutes</label>
+                <label><input type="checkbox" name="time" value="20 minutes"> 20 minutes</label>
+                <label><input type="checkbox" name="time" value="30 minutes"> 30 minutes</label>
+                <label><input type="checkbox" name="time" value="40 minutes"> 40 minutes</label>
+                <label><input type="checkbox" name="time" value="50 minutes"> 50 minutes</label>
+                <label><input type="checkbox" name="time" value="60 minutes"> 60 minutes</label>
+            </div>
+        </div>
 
         <button type="submit">Filter Recipes</button>
     </form>
 
-    <h2>Filtered Recipes</h2>
-    <ul id="recipe-list"></ul>
+
+    <div id="recipe-list">
+        <!-- Filtered recipes will be rendered here by the server -->
+        {% if recipes %}
+        {% for recipe in recipes %}
+        <div class="recipe-card">
+            <img src="{{ recipe.imgLink }}" alt="{{ recipe.recipe_name }}">
+            <h3>{{ recipe.recipe_name }}</h3>
+            <a href="/recipe-details/{{ recipe.id }}">View Recipe</a>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No recipes found.</p>
+        {% endif %}
+    </div>
+    <script src="../static/js/fiter.js"></script>
 </body>
 
 </html>
