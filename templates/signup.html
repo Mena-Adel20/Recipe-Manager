@@ -13,7 +13,18 @@
         <div class="header">
             <h2>CREATE ACCOUNT</h2>
         </div>
-    <form class="form" id="form" method="POST" action="/signup">
+
+
+
+        <!-- Display error message from Flask if validation fails -->
+        {% if validation_message %}
+        <div class="error-message">
+            <small>{{ validation_message }}</small>
+        </div>
+        {% endif %}
+
+
+        <form class="form" id="form" method="POST" action="/signup">
             <div class="form-control ">
                 <label>Username</label>
                 <input type="text" placeholder="beautyndbeast" id="username" name="username">
@@ -26,7 +37,7 @@
             </div>
             <div class="form-control">
                 <label>Password</label>
-                <input type="password" placeholder="paasword" id="password" name="password">
+                <input type="password" placeholder="password" id="password" name="password">
                 <small>Error Message</small>
             </div>
             <div class="form-control">
