@@ -52,7 +52,7 @@ def category():
     with open("categories.json", "r") as json_file:
         categories_data = json.load(json_file)
     
-    return flask.render_template("categories.html", categories=categories_data["categories"])
+    return render_template("categories.html", categories=categories_data["categories"])
 #**********************************************************************************
 
 #routing to categoty page
@@ -160,6 +160,30 @@ def addrecipe():
 
     return render_template('addRecipe.html')
 
+
+@app.route('/filter', methods=['GET'])
+def filter_recipes():
+    # Get the selected filters from query parameters
+    selected_cuisines = request.args.getlist('cuisine')
+    selected_times = request.args.getlist('time')
+
+    # Load recipes from JSON file
+    with open('recipes.json', 'r') as json_file:
+        recipes_data = json.load(json_file)
+
+    # If no filters are selected, don't show any recipes
+    if not selected_cuisines and not selected_times:
+        return render_template('filter.html', recipes=[])
+
+    # Filter recipes based on selected cuisines and times
+    filtered_recipes = []
+    for recipe in recipes_data['recipes']:
+        if (not selected_cuisines or recipe['cuisine'] in selected_cuisines) and \
+           (not selected_times or recipe['time'] in selected_times):
+            filtered_recipes.append(recipe)
+
+    # Render the 'filter.html' template with the filtered recipes
+    return render_template('filter.html', recipes=filtered_recipes)
 
 
 
