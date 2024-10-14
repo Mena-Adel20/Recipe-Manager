@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-.category-card , .addRecipe_card {
+.category-card , .addRecipe_card ,.filter-card {
     margin: 20px;
     width: 350px;
     overflow: hidden;
@@ -38,13 +38,13 @@ body {
     margin: 20px;
 }
 
-.category-card img ,.addRecipe_card img {
+.category-card img ,.addRecipe_card img ,.filter-card img {
     width: 60%;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
 
-.str-name , .newrecipe-name {
+.str-name , .newrecipe-name ,.filter-name {
     margin-top: 0;
     color: #E0E0E0;
     /* Light gray for better readability */
