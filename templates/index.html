@@ -1,3 +1,10 @@
+{% extends "navBar.html" %}
+
+{% block title %}
+Home - My App
+{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,34 +17,37 @@
 </head>
 
 <body>
-<section>
-    <div class="container-pag1">
-        <div>
-            <div class="addRecipe_card" id="addRecipe_card">
-                <img src="../static/images/newrecipe.jpg" alt="addRecipe" class="addRecipe-image">
-                <div class="addRecipe-details">
-                    <h2 class="newrecipe-name">Add your special recipe</h2>
+
+
+    <section>
+        <div class="container-pag1">
+            <div>
+                <div class="addRecipe_card" id="addRecipe_card">
+                    <img src="../static/images/newrecipe.jpg" alt="addRecipe" class="addRecipe-image">
+                    <div class="addRecipe-details">
+                        <h2 class="newrecipe-name">Add your special recipe</h2>
+                    </div>
+                </div>
+                <div class="category-card" id="category-card">
+                    <img src="../static/images/categories.jpg" alt="explore categories" class="category-image">
+                    <div class="category-details">
+                        <h2 class="str-name">See more categories</h2>
+                    </div>
+                </div>
+                <div class="filter-card" id="filter-card">
+                    <img src="../static/images/filter.jpg" alt="filter Recipe" class="filter-image">
+                    <div class="filter-details">
+                        <h2 class="filter-name">Filter your recipes </h2>
+                    </div>
                 </div>
             </div>
-            <div class="category-card" id="category-card">
-                <img src="../static/images/categories.jpg" alt="explore categories" class="category-image">
-                <div class="category-details">
-                    <h2 class="str-name">See more categories</h2>
-                </div>
-            </div>
-            <div class="filter-card" id="filter-card">
-                <img src="../static/images/filter.jpg" alt="filter Recipe" class="filter-image">
-                <div class="filter-details">
-                    <h2 class="filter-name">Filter your recipes </h2>
-                </div>
-            </div>
+
         </div>
-        
-    </div>
-</section><br>
+    </section><br>
     <script src="../static/js/home.js"></script>
 
 
 </body>
 
 </html>
+{% endblock %}

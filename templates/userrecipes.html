@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Recipes</title>
+    <link rel="stylesheet" href="../static/css/filter.css">
+
+</head>
+
+<body>
+    <h1>Your Recipes</h1>
+    <div id="recipe-list">
+        <!-- Filtered recipes will be rendered here by the server -->
+        {% if recipes %}
+        {% for recipe in recipes %}
+        <div class="recipe-card">
+            <img src="{{ recipe.imgLink }}" alt="{{ recipe.recipe_name }}">
+            <h3>{{ recipe.recipe_name }}</h3>
+            <a href="/recipe-details/{{ recipe.id }}">View Recipe</a>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No recipes found.</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

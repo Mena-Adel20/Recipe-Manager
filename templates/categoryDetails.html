@@ -1,3 +1,10 @@
+{% extends "navBar.html" %}
+
+{% block title %}
+Home - My App
+{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,10 +42,11 @@
             <p> No Recipe Found </p>
         </div>
         {% endif %}
-    <script src="../static/js/categories.js"></script>
+        <script src="../static/js/categories.js"></script>
 
     </div>
 
 </body>
 
 </html>
+{% endblock %}
