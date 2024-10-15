@@ -57,3 +57,13 @@ function setLoginSuccess(input) {
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+const loginButton = document.getElementById("login");
+
+  
+
+loginButton.addEventListener("click", function() {
+    const email = loginEmail.value; // Get the value of an input field with the id userEmail
+    localStorage.setItem("email", email); // Save the email address in the browser's localStorage with the key "email"
+    
+});
