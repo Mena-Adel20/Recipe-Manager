@@ -13,3 +13,5 @@
         function removeIngredient(button) {
             button.parentNode.remove();
         }
+
+        

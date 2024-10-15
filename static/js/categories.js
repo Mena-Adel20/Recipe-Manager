@@ -20,3 +20,4 @@ recipeItems.forEach(function(item) {
         window.location.href = `/recipe-details/${recipeId}`; 
     });
 });
+

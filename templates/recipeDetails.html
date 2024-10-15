@@ -1,3 +1,10 @@
+{% extends "navBar.html" %}
+
+{% block title %}
+Home - My App
+{% endblock %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,10 +35,12 @@
             </div>
             <div class="time">
                 <h2>time:</h2>
-             <p><i class="fas fa-clock "></i>{{ data.time }} </p>
+                <p><i class="fas fa-clock "></i>{{ data.time }} </p>
 
             </div>
-          
+
+
+
         </div>
 
 
@@ -45,3 +54,4 @@
 </body>
 
 </html>
+{% endblock %}
