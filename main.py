@@ -13,16 +13,14 @@ app.secret_key = 'otaku'
 UPLOAD_FOLDER = r"D:\RC\Recipe-Manager\static\uploads"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')  
 
 #**********************************************************************************
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     validation_message = None
-
+    session.pop('email', None)
+    
     if request.method == 'POST':
         # Retrieve data from the form
         username = request.form['username']
@@ -36,7 +34,9 @@ def signup():
         if error:
             validation_message = "Email already exists. Please try a different one."
             return render_template('signup.html', validation_message=validation_message)
-
+        
+        # Clear the session
+        session.clear()
         # If no error, proceed to the login page
         return redirect(url_for('login'))
     
@@ -48,6 +48,9 @@ def signup():
 @app.route("/", methods=["POST", "GET"])
 def login():
     validation_message = None
+    if 'email' in session:
+        return redirect(url_for('home'))
+
 
     if request.method == "POST":
         email = request.form['email']
@@ -61,7 +64,7 @@ def login():
         for user in data:
             if user['email'] == email and user['pass'] == password:
                 # If match is found, set the email in the session and redirect to the home page
-                # session['email'] = email
+                session['email'] = email
                 return redirect(url_for('home'))
 
         # If no match is found, set validation message
@@ -75,6 +78,10 @@ def login():
 #routing to login page
 @app.route("/home")
 def home():
+    # Check  user if not logged in redirect to the login page
+    if 'email' not in session:
+        return redirect('/')  
+    
     return render_template("index.html")
 #**********************************************************************************
 
@@ -189,12 +196,49 @@ def addrecipe():
             json.dump(data, f, indent=4)
             f.flush()  # Ensure it's written to the file system
             f.truncate()  # Remove any leftover content
+        email = session.get('email')  # Assuming email is stored in session after login
+        if email:
 
-        return redirect(url_for('index'))  # Redirect back to the home page
+            with open('users.json', 'r+') as user_file:
+                user_data = json.load(user_file)
+                for user in user_data['users']:
+                    if user['email'] == email:
+                        user['recipes'].append(str(new_id))
+                        user_file.seek(0)  # Reset file pointer
+                        json.dump(user_data, user_file, indent=4)
+                        user_file.truncate()
+                        break
+
+        return render_template('index.html') # Redirect back to the home page
 
     return render_template('addRecipe.html')
 
 
+@app.route('/yourrecipes')
+def your_recipes():
+    email = session.get('email')  # Assuming email is stored in session after login
+    if email:
+        with open('users.json', 'r') as user_file:
+            user_data = json.load(user_file)  # user_data is now a list, not a dict
+            user_recipes = []
+            
+            # Find the user by email in the list of users
+            for user in user_data['users']:
+                if user['email'] == email:
+                    user_recipes = user['recipes']
+                    break
+
+        # Fetch recipe details from recipes.json based on user_recipes
+        with open('recipes.json', 'r') as recipe_file:
+            recipes_data = json.load(recipe_file)
+            user_recipe_details = [recipe for recipe in recipes_data['recipes'] if recipe['id'] in user_recipes]
+
+        return render_template('userrecipes.html', recipes=user_recipe_details)
+    else:
+        flash('Please log in to view your recipes.')
+        return redirect(url_for('login'))
+
+    
 @app.route('/filter', methods=['GET'])
 def filter_recipes():
     # Get the selected filters from query parameters
