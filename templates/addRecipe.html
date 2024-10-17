@@ -21,6 +21,10 @@ Home - My App
             <h2>Recipe Form</h2>
 
             <form id="recipeForm" enctype="multipart/form-data" action="/addrecipe" method="POST">
+
+                <!-- Hidden field for recipe ID to differentiate between add and update -->
+                <input type="hidden" id="recipeId" name="recipeId" value="">
+
                 <label class="recipeName">Recipe Name:</label><br>
                 <input type="text" id="recipeName" name="recipeName" required><br><br>
 
@@ -60,7 +64,8 @@ Home - My App
                 <label for="photo">Upload Photo:</label><br>
                 <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
 
-                <button type="submit">Submit Recipe</button>
+                <!-- The submit button will change text dynamically -->
+                <button type="submit" id="submitButton">Submit Recipe</button>
             </form>
         </div>
 
