@@ -174,3 +174,46 @@ button:hover {
    
     }
 }
+
+/* Add styles for the recipe header */
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.action-icons {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.update-icon,
+.delete-icon {
+    color: #DDE4ED;
+    /* Light gray for icon color */
+    margin-left: 10px;
+    /* Space between icons */
+    font-size: 18px;
+    /* Size of icons */
+    background: none;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: color 0.3s;
+    /* Smooth transition for color change */
+}
+
+.update-icon:hover,
+.delete-icon:hover {
+    color: #FFB300;
+    /* Change color on hover (gold accent) */
+}
+
+
+/* Optional: add styles to the buttons to ensure they are visually appealing */
+button {
+    padding: 5px;
+    /* Adjust padding for better click area */
+}
