@@ -61,7 +61,7 @@ def login():
             data = json.load(infile)
 
         # Check if the provided email and password match any user in the data
-        for user in data:
+        for user in data['users']:
             if user['email'] == email and user['pass'] == password:
                 # If match is found, set the email in the session and redirect to the home page
                 session['email'] = email
@@ -80,24 +80,19 @@ def login():
 def home():
     # Check  user if not logged in redirect to the login page
     if 'email' not in session:
-        return redirect('/')  
-    
-    return render_template("index.html")
-#**********************************************************************************
+        return redirect('/') 
 
-
-#routing to all category page
-@app.route("/category")
-def category():
     # Open and read the categories  from the JSON file
     with open("categories.json", "r") as json_file:
-        categories_data = json.load(json_file)
+        categories_data = json.load(json_file) 
     
-    return render_template("categories.html", categories=categories_data["categories"])
+    return render_template("index.html", categories=categories_data["categories"])
 #**********************************************************************************
 
+
+
 #routing to categoty page
-@app.route("/category/<category_name>")
+@app.route("/home/<category_name>")
 def category_name(category_name):
 
     # Open and read the recipes data from the JSON file
@@ -209,7 +204,9 @@ def addrecipe():
                         user_file.truncate()
                         break
 
-        return render_template('index.html') # Redirect back to the home page
+        return redirect(url_for('home'))
+        
+        # return render_template('index.html') # Redirect back to the home page
 
     return render_template('addRecipe.html')
 
@@ -263,6 +260,95 @@ def filter_recipes():
     # Render the 'filter.html' template with the filtered recipes
     return render_template('filter.html', recipes=filtered_recipes)
 
+
+
+@app.route('/delete-recipe/<id>', methods=['POST'])
+def delete_recipe(id):
+    # Remove the recipe from recipes.json
+    with open('recipes.json', 'r+') as recipe_file:
+        data = json.load(recipe_file)
+        data['recipes'] = [recipe for recipe in data['recipes'] if recipe['id'] != id]
+        recipe_file.seek(0)
+        json.dump(data, recipe_file, indent=4)
+        recipe_file.truncate()
+
+    # Remove the recipe ID from the user's list of recipes in users.json
+    email = session.get('email')
+    if email:
+        with open('users.json', 'r+') as user_file:
+            user_data = json.load(user_file)
+            for user in user_data["users"]:
+                if user['email'] == email:
+                    user['recipes'] = [recipe_id for recipe_id in user['recipes'] if recipe_id != id]
+                    break
+            user_file.seek(0)
+            json.dump(user_data, user_file, indent=4)
+            user_file.truncate()
+
+    return redirect(url_for('your_recipes'))
+
+# Load recipes from JSON file
+
+def load_recipes():
+   
+    with open('recipes.json', 'r+') as file:
+        return json.load(file)
+    return []
+
+# Save recipes to JSON file
+def save_recipes(recipes):
+    with open('recipes.json', 'w') as file:
+        json.dump(recipes, file, indent=4)
+
+@app.route('/editrecipe/<recipe_id>', methods=['GET', 'POST'])
+def edit_recipe(recipe_id):
+    recipes = load_recipes()  # Function to load recipes from JSON
+
+    if request.method == 'POST':
+        # Retrieve updated recipe data from the form
+        recipe_name = request.form['recipeName']
+        category = request.form['category']
+        cuisine = request.form['cuisine']
+        ingredients_names = request.form.getlist('ingredientName[]')
+        ingredients_measurements = request.form.getlist('ingredientMeasurement[]')
+        instructions = request.form['instructions']
+        time = request.form['time']
+
+        # Handle image upload if provided
+        photo = request.files.get('photo')
+        photo_filename = None
+        if photo:
+            photo_filename = os.path.join(app.config['UPLOAD_FOLDER'], photo.filename)
+            photo.save(photo_filename)
+            photo_filename = f'../static/uploads/{photo.filename}'
+
+        # Combine ingredients into a list of dictionaries
+        ingredients = [{"name": name, "measurement": measurement} for name, measurement in zip(ingredients_names, ingredients_measurements)]
+
+        # Update the recipe in the loaded recipes
+        for recipe in recipes['recipes']:
+            if recipe['id'] == recipe_id:
+                recipe['recipe_name'] = recipe_name
+                recipe['categoryName'] = category
+                recipe['cuisine'] = cuisine
+                recipe['ingredients'] = ingredients
+                recipe['instructions'] = instructions
+                recipe['time'] = time
+                if photo_filename:
+                    recipe['imgLink'] = photo_filename
+                break
+
+        # Save updated recipes to the JSON file
+        save_recipes(recipes)
+
+        return redirect(url_for('home'))  # Redirect after saving
+
+    # Handle GET request to load the edit form
+    recipe = next((item for item in recipes['recipes'] if item['id'] == recipe_id), None)
+    if recipe:
+        return render_template('editrecipe.html', recipe=recipe)
+    else:
+        return "Recipe not found", 404
 
 
 if __name__ == '__main__':
