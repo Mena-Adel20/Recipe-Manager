@@ -1,0 +1,88 @@
+{% extends "navBar.html" %}
+
+{% block title %}
+Edit Recipe - My App
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="../static/css/addrecipe.css"> <!-- Reuse the same CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>Edit Recipe</h2>
+
+            <form id="recipeForm" enctype="multipart/form-data" action="/editrecipe/{{ recipe.id }}" method="POST">
+
+                <!-- Hidden field for recipe ID -->
+                <input type="hidden" id="recipeId" name="recipeId" value="{{ recipe.id }}">
+
+                <label class="recipeName">Recipe Name:</label><br>
+                <input type="text" id="recipeName" name="recipeName" value="{{ recipe.recipe_name }}" required><br><br>
+
+                <label for="category">Category:</label><br>
+                <select id="category" name="category" required>
+                    <option value="Meat" {% if recipe.categoryName=='Meat' %}selected{% endif %}>Meat</option>
+                    <option value="Chicken" {% if recipe.categoryName=='Chicken' %}selected{% endif %}>Chicken</option>
+                    <option value="Dessert" {% if recipe.categoryName=='Dessert' %}selected{% endif %}>Dessert</option>
+                    <option value="Pasta" {% if recipe.categoryName=='Pasta' %}selected{% endif %}>Pasta</option>
+                    <option value="Seafood" {% if recipe.categoryName=='Seafood' %}selected{% endif %}>Seafood</option>
+                    <option value="Side" {% if recipe.categoryName=='Side' %}selected{% endif %}>Side Dish</option>
+                    <option value="Vegetarian" {% if recipe.categoryName=='Vegetarian' %}selected{% endif %}>Vegetarian
+                    </option>
+                    <option value="Breakfast" {% if recipe.categoryName=='Breakfast' %}selected{% endif %}>Breakfast
+                    </option>
+                    <option value="Miscellaneous" {% if recipe.categoryName=='Miscellaneous' %}selected{% endif %}>
+                        Miscellaneous</option>
+                </select><br><br>
+
+                <label for="cuisine">Cuisine:</label><br>
+                <input type="text" id="cuisine" name="cuisine" value="{{ recipe.cuisine }}" required><br><br>
+
+                <div id="ingredients">
+                    {% for ingredient in recipe.ingredients %}
+                    <div class="ingredient">
+                        <input type="text" name="ingredientName[]" value="{{ ingredient.name }}"
+                            placeholder="Ingredient Name" required>
+                        <input type="text" name="ingredientMeasurement[]" value="{{ ingredient.measurement }}"
+                            placeholder="Measurement" required>
+                        <button type="button" class="remove-ingredient" onclick="removeIngredient(this)">Remove</button>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <button type="button" id="addIngredientButton" onclick="addIngredient()">Add Ingredient</button><br><br>
+
+                <label for="instructions">Instructions:</label><br>
+                <textarea id="instructions" name="instructions" rows="4"
+                    required>{{ recipe.instructions }}</textarea><br><br>
+
+                <label for="time">Time:</label><br>
+                <input type="text" id="time" name="time" value="{{ recipe.time }}" required><br><br>
+
+                <label for="photo">Upload Photo:</label><br>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+                <button type="submit" id="submitButton">Update Recipe</button>
+            </form>
+        </div>
+
+        <div class="right-side">
+            <img src="../static/images/newrecipe.jpg" alt="Recipe Image">
+            <!-- You can use a different image if needed -->
+        </div>
+    </div>
+
+    <script src="../static/js/addRecipe.js"></script> <!-- Assuming you might have a different JS for this -->
+</body>
+
+</html>
+{% endblock %}
