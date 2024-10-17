@@ -102,3 +102,42 @@ h2 {
         height: auto;
     }
 }
+/* General button styling */
+.add-recipe-button,
+.filter-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #a02611;
+    /* Tomato color */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.add-recipe-button:hover,
+.filter-button:hover {
+    background-color: #e5533b;
+    /* Darker tomato color on hover */
+}
+
+/* Positioning the buttons */
+.addRecipe_card {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    /* Place it at the top right */
+}
+
+.filter-card {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    /* Place it at the top left */
+}
