@@ -5,7 +5,7 @@ categoryItem.forEach(function(item) {
         // Get the data-id attribute value from the clicked item
         const categoryName = item.dataset.id; 
         // Redirect the user to the recipe details page .
-        window.location.href = "/category/" + categoryName;
+        window.location.href = "/home/" + categoryName;
     });
 });
 
@@ -21,3 +21,13 @@ recipeItems.forEach(function(item) {
     });
 });
 
+
+const newRecipeCard = document.getElementById("addRecipe_card");
+newRecipeCard.addEventListener("click", function() {
+    window.location.href = "/addrecipe";
+});
+
+const filterCard = document.getElementById("filter-card");
+filterCard.addEventListener("click", function() {
+    window.location.href = "/filter";
+});
