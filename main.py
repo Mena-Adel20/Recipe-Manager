@@ -261,9 +261,16 @@ def filter_recipes():
 
 @app.route('/delete-recipe/<id>', methods=['POST'])
 def delete_recipe(id):
+
     # Remove the recipe from recipes.json
+    photo_path = None
     with open('recipes.json', 'r+') as recipe_file:
         data = json.load(recipe_file)
+        for recipe in data['recipes']:
+            if recipe['id'] == id:
+                photo_path = recipe['imgLink']  # Get the photo path
+                break
+
         data['recipes'] = [recipe for recipe in data['recipes'] if recipe['id'] != id]
         recipe_file.seek(0)
         json.dump(data, recipe_file, indent=4)
@@ -281,6 +288,12 @@ def delete_recipe(id):
             user_file.seek(0)
             json.dump(user_data, user_file, indent=4)
             user_file.truncate()
+        if photo_path:
+            # Assuming the photo is stored in the static/uploads directory
+            photo_file_path = os.path.join('static', 'uploads', os.path.basename(photo_path))
+            if os.path.exists(photo_file_path):
+                os.remove(photo_file_path)  # Delete the photo file
+
 
     return redirect(url_for('your_recipes'))
 
