@@ -1,4 +1,3 @@
-import flask 
 from flask import Flask, request, render_template, redirect, url_for, flash,session
 import json
 from datetime import datetime
@@ -51,7 +50,6 @@ def login():
     if 'email' in session:
         return redirect(url_for('home'))
 
-
     if request.method == "POST":
         email = request.form['email']
         password = request.form['password']
@@ -63,30 +61,29 @@ def login():
         # Check if the provided email and password match any user in the data
         for user in data['users']:
             if user['email'] == email and user['pass'] == password:
-                # If match is found, set the email in the session and redirect to the home page
+                # Store the email and name in the session
                 session['email'] = email
+              
                 return redirect(url_for('home'))
 
-        # If no match is found, set validation message
         validation_message = "Invalid email or password. Please try again."
-        print(validation_message)  # Debugging: See if message is set
 
-
-    # Pass validation message to the template
     return render_template('login.html', validation_message=validation_message)
 
-#routing to login page
+#**********************************************************************************
 @app.route("/home")
 def home():
-    # Check  user if not logged in redirect to the login page
+    # Check if user is not logged in, redirect to the login page
     if 'email' not in session:
-        return redirect('/') 
+        return redirect('/')
 
-    # Open and read the categories  from the JSON file
+    # Open and read the categories from the JSON file
     with open("categories.json", "r") as json_file:
-        categories_data = json.load(json_file) 
-    
+        categories_data = json.load(json_file)
+
+
     return render_template("index.html", categories=categories_data["categories"])
+
 #**********************************************************************************
 
 
@@ -349,6 +346,18 @@ def edit_recipe(recipe_id):
         return render_template('editrecipe.html', recipe=recipe)
     else:
         return "Recipe not found", 404
+
+
+
+@app.route("/logout", methods=["GET", "POST"])
+def logout():
+    # Check if user is logged in
+    if 'email' in session:
+        # Remove email from session
+        session.pop('email')
+    
+    return redirect(url_for('login'))
+
 
 
 if __name__ == '__main__':
