@@ -14,3 +14,19 @@ function removeIngredient(button) {
             button.parentNode.remove();
         }
 
+document.getElementById("recipeForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission for now
+
+    // Show the modal box
+    const modal = document.getElementById("submissionModal");
+    modal.style.display = "block";
+
+    // Handle the "OK" button click
+    document.getElementById("okButton").addEventListener("click", function () {
+        modal.style.display = "none";
+        window.location.href = "/home"; // Redirect to home page after closing the modal
+
+        // After closing the modal, submit the form programmatically
+        document.getElementById("recipeForm").submit();
+    });
+});
