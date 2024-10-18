@@ -8,6 +8,8 @@ loginForm.addEventListener("submit", (e) => {
     if (!validateLoginInputs()) {
         e.preventDefault(); // Prevent form submission if validation fails
     }
+
+     
 });
 
 // Function to validate the login inputs

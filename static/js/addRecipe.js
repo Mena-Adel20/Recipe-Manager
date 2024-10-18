@@ -10,8 +10,7 @@
             ingredientsDiv.appendChild(newIngredientDiv);
         }
 
-        function removeIngredient(button) {
+function removeIngredient(button) {
             button.parentNode.remove();
         }
 
-        

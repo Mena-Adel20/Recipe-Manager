@@ -38,7 +38,7 @@ function checkInputs() {
     if (passwordValue === '') {
         setError(password, "This field cannot be blank!");
         isValid = false;
-    } else if (passwordValue.length < 5) {
+    } else if (passwordValue.length < 6) {
         setError(password, "Password is too small!");
         isValid = false;
     } else {
