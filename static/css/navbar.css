@@ -1,21 +1,17 @@
 body {
     background-color: #0F182C;
-    /* Background matching your theme */
     color: #fff;
-    /* Text color */
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 .navbar {
     background-color: #27355A;
-    /* Navbar background color */
     padding: 15px 0;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
-    /* Centers the navbar horizontally */
 }
 
 .navbar-container {
@@ -23,61 +19,41 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    /* Maximum width */
     width: 100%;
-    /* Full width */
     padding: 0 20px;
-    /* Side padding for navbar content */
 }
 
 .navbar-brand a {
     font-size: 24px;
-    /* Logo text size */
     font-weight: bold;
-    /* Make it bold */
     color: #DDE4ED;
-    /* Brand color */
     text-decoration: none;
-    /* Remove underline */
 }
 
 .navbar-menu {
     list-style: none;
-    /* Remove bullet points */
     padding: 0;
-    /* Remove padding */
     margin: 0;
-    /* Remove margin */
     display: flex;
-    /* Flexbox for horizontal layout */
 }
 
 .navbar-menu li {
     margin: 0 15px;
-    /* Space between menu items */
 }
 
 .navbar-menu a {
     color: #DDE4ED;
-    /* Menu item color */
     text-decoration: none;
-    /* Remove underline */
     padding: 10px 15px;
-    /* Padding around links */
     border-radius: 4px;
-    /* Rounded corners */
     transition: background-color 0.3s;
-    /* Smooth background change on hover */
 }
 
 .navbar-menu a:hover {
     background-color: #0e5a90;
-    /* Change background on hover */
     color: #fff;
-    /* Change text color on hover */
 }
 
 .content {
     padding: 20px;
-    /* Space around page content */
 }

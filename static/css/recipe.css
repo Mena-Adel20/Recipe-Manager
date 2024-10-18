@@ -9,7 +9,6 @@
 .recipy-home-image img {
     width: 100%;
     height: auto;
-    /* Changed to auto for responsive image height */
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
 }
@@ -27,28 +26,22 @@
 
 .recipe-list-card {
     background: linear-gradient(to right, #34495E, #2C3E50);
-    /* Dark gradient for card */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    /* Slightly darker shadow */
     width: calc(20% - 40px);
     height: auto;
     cursor: pointer;
     border-radius: 16px;
-    /* Unified border radius */
     overflow: hidden;
     margin-bottom: 16px;
     transition: transform 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 .recipe-list-card:hover {
     transform: translateY(-5px);
-    /* Lift effect on hover */
 }
 
 .recipe-name {
     color: #DDE4ED;
-    /* Light gray for recipe names */
     font-size: x-large;
     text-align: center;
 }
@@ -73,7 +66,6 @@
 
     .recipy-home-image {
         display: none;
-        /* Hide image on small screens */
     }
 
     #recipes-container {
@@ -83,7 +75,6 @@
 
     .recipe-list-card {
         width: calc(50% - 20px);
-        /* Adjust width for smaller screens */
     }
 }
 
@@ -95,7 +86,6 @@
 
     .recipy-home-image {
         display: none;
-        /* Hide image on medium screens */
     }
 
     #recipes-container {
@@ -105,21 +95,18 @@
 
     .recipe-list-card {
         width: calc(30% - 20px);
-        /* Adjust width for medium screens */
     }
 }
 
 body {
     width: 100%;
     background: #2E3B4E;
-    /* A lighter, muted dark blue-gray */
     display: flex;
     flex-direction: column;
 }
 h1 {
     text-align: center;
     color: #DDE4ED;
-    /* Light gray for main headings */
     margin-bottom: 40px;
 }
 
@@ -129,7 +116,6 @@ h1 {
 
 .recipe-details h2 {
     color: #DDE4ED;
-    /* Light gray for recipe detail headings */
     margin-bottom: 40px;
 }
 
@@ -142,14 +128,12 @@ h1 {
 
 .placeholder img {
     width: 50%;
-    /* Responsive image width */
 }
 
 .placeholder p {
     font-size: x-large;
     text-align: center;
     color: #DDE4ED;
-    /* Light gray for placeholder text */
     margin-top: 24px;
 }
 
@@ -162,12 +146,10 @@ h1 {
 .category i {
     margin-right: 5px;
     color: #b15709;
-    /* Color for icons, can adjust as needed */
 }
 
 .category p {
     font-size: medium;
     color: #DDE4ED;
-    /* Light gray for category text */
     margin: 4px;
 }

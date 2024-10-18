@@ -1,7 +1,6 @@
 body {
     width: 100%;
     background: #2E3B4E;
-    /* A lighter, muted dark blue-gray */
     display: flex;
     flex-direction: column;
 }
@@ -31,7 +30,6 @@ body {
     text-align: center;
     align-items: center;
     background: linear-gradient(to right, #4C5C72, #56687E, #62748C);
-    /* Softer, lighter gradient */
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     cursor: pointer;
@@ -47,7 +45,6 @@ body {
 .str-name , .newrecipe-name ,.filter-name {
     margin-top: 0;
     color: #E0E0E0;
-    /* Light gray for better readability */
     font-size: 18px;
     text-align: center;
     font-weight: normal;
