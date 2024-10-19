@@ -129,16 +129,15 @@ def recipe_details(id):
 #**********************************************************************************
 
 def get_next_recipe_id():
-    # Load existing recipes and find the next available ID
     with open('recipes.json', 'r') as f:
         data = json.load(f)
         
-        if data['recipes']:
-            # Find the maximum ID in the existing recipes
-            max_id = max(int(recipe['id']) for recipe in data['recipes'])
-            return max_id + 1
-        else:
-            return 1  # Start with ID 1 if no recipes exist  
+        data['last_id'] = str(int(data['last_id']) + 1)
+        with open('recipes.json', 'w') as file:
+            json.dump(data, file, indent=4)
+
+        return data['last_id']
+       
         
 
 @app.route('/addrecipe', methods=['GET', 'POST'])

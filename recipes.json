@@ -1,607 +1,831 @@
 {
-  "recipes": [
-    {
-      "id": "34020",
-      "recipe_name": "Kung Pao Chicken",
-      "category_id": 1,
-      "categoryName":"Chicken",
-      "description": "A spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. It's known for its bold flavors and a delightful mix of textures.",
-      "ingredients": [
-        { "name": "Chicken Breast", "measurement": "500g" },
-        { "name": "Peanuts", "measurement": "100g" },
-        { "name": "Bell Pepper", "measurement": "1" },
-        { "name": "Green Onions", "measurement": "3" },
-        { "name": "Soy Sauce", "measurement": "3 tbsp" },
-        { "name": "Chili Paste", "measurement": "1 tbsp" },
-        { "name": "Vegetable Oil", "measurement": "2 tbsp" }
-      ],
-      "instructions": [
-        "Cut the chicken into bite-sized pieces and marinate with soy sauce.",
-        "Heat oil in a wok and stir-fry the chicken until cooked.",
-        "Add peanuts, bell pepper, and green onions, and stir-fry for 3-4 minutes.",
-        "Stir in chili paste and cook for another minute before serving."
-      ],
-      "time": "30 minutes",
-      "cuisine": "Chinese",
-      "imgLink": "https://www.themealdb.com/images/media/meals/1525872624.jpg"
-    },
-    {
-      "id": "34021",
-      "recipe_name": "Fried Chicken",
-      "category_id": 1,
-      "categoryName":"Chicken",
-      "description": "A classic American dish featuring chicken pieces that are breaded and deep-fried until golden brown. It’s crispy on the outside and juicy on the inside.",
-      "ingredients": [
-        { "name": "Chicken Pieces", "measurement": "1 kg" },
-        { "name": "Flour", "measurement": "2 cups" },
-        { "name": "Buttermilk", "measurement": "1 cup" },
-        { "name": "Paprika", "measurement": "1 tbsp" },
-        { "name": "Salt", "measurement": "to taste" },
-        { "name": "Oil", "measurement": "for frying" }
-      ],
-      "instructions": [
-        "Marinate chicken in buttermilk for at least 2 hours.",
-        "In a bowl, mix flour, paprika, and salt.",
-        "Dredge marinated chicken in flour mixture and heat oil in a pan.",
-        "Fry chicken pieces until golden brown and cooked through."
-      ],
-      "time": "1 hour",
-      "cuisine": "American",
-      "imgLink":"https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg"
-    },
-    {
-      "id": "34022",
-      "recipe_name": "Spaghetti Bolognese",
-      "category_id": 4,
-      "categoryName":"Pasta",
-      "description": "An Italian classic, this pasta dish features a rich, meaty sauce made from ground beef, tomatoes, and herbs. It’s a comforting and hearty meal perfect for any occasion.",
-      "ingredients": [
-        { "name": "Spaghetti", "measurement": "200g" },
-        { "name": "Ground Beef", "measurement": "400g" },
-        { "name": "Tomato Sauce", "measurement": "400g" },
-        { "name": "Onion", "measurement": "1" },
-        { "name": "Garlic", "measurement": "2 cloves" },
-        { "name": "Olive Oil", "measurement": "2 tbsp" },
-        { "name": "Basil", "measurement": "1 tbsp" },
-        { "name": "Salt", "measurement": "to taste" }
-      ],
-      "instructions": [
-        "Cook spaghetti according to package instructions.",
-        "In a pan, heat olive oil and sauté onions and garlic until soft.",
-        "Add ground beef and cook until browned.",
-        "Stir in tomato sauce, basil, and salt, and simmer for 15 minutes.",
-        "Serve sauce over cooked spaghetti."
-      ],
-      "time": "40 minutes",
-      "cuisine": "Italian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg"
-    },
-   
-    {
-      "id": "34023",
-      "recipe_name": "Beef Stroganoff",
-      "category_id": 2,
-      "categoryName":"Meat",
-      "description": "A comforting Russian dish of sautéed beef served in a creamy mushroom sauce over noodles. It combines rich flavors and a creamy texture that is perfect for a cozy meal.",
-      "ingredients": [
-        { "name": "Beef", "measurement": "500g" },
-        { "name": "Onion", "measurement": "1" },
-        { "name": "Mushrooms", "measurement": "250g" },
-        { "name": "Garlic", "measurement": "2 cloves" },
-        { "name": "Flour", "measurement": "2 tbsp" },
-        { "name": "Beef Broth", "measurement": "2 cups" },
-        { "name": "Sour Cream", "measurement": "1 cup" },
-        { "name": "Salt", "measurement": "to taste" },
-        { "name": "Black Pepper", "measurement": "to taste" }
-      ],
-      "instructions": [
-        "Sauté onions and garlic in a pan until softened.",
-        "Add sliced beef and cook until browned.",
-        "Stir in mushrooms and flour, cooking for 2 minutes.",
-        "Gradually add beef broth, simmer for 10 minutes.",
-        "Stir in sour cream, and season with salt and pepper."
-      ],
-      "time": "40 minutes",
-      "cuisine": "Russian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/svprys1511176755.jpg"
-    },
-    {
-      "id": "34024",
-      "recipe_name": "Moussaka",
-      "category_id": 2,
-      "categoryName":"Meat",
-      "description": "A traditional Greek dish layered with eggplant, spiced meat, and topped with a creamy béchamel sauce. It’s a hearty and comforting dish with rich flavors.",
-      "ingredients": [
-        { "name": "Eggplant", "measurement": "2" },
-        { "name": "Ground Beef", "measurement": "500g" },
-        { "name": "Onion", "measurement": "1" },
-        { "name": "Tomato Sauce", "measurement": "400g" },
-        { "name": "Milk", "measurement": "500ml" },
-        { "name": "Flour", "measurement": "50g" },
-        { "name": "Butter", "measurement": "50g" },
-        { "name": "Nutmeg", "measurement": "1/4 tsp" },
-        { "name": "Salt", "measurement": "to taste" }
-      ],
-      "instructions": [
-        "Slice eggplant and salt to draw out moisture.",
-        "Sauté onions and garlic, add ground beef, and cook until browned.",
-        "Layer eggplant, meat mixture, and béchamel in a baking dish.",
-        "Bake until golden and serve warm."
-      ],
-      "time": "1 hour 30 minutes",
-      "cuisine": "Greek",
-      "imgLink":"https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg"
-    },
-    {
-      "id": "34025",
-      "recipe_name": "Paella",
-      "category_id": 3,
-      "categoryName":"Seafood",
-      "description": "A traditional Spanish rice dish that originated in Valencia. It combines seafood, chicken, and vegetables with saffron-infused rice, creating a colorful and flavorful dish.",
-      "ingredients": [
-        { "name": "Basmati Rice", "measurement": "2 cups" },
-        { "name": "Chicken", "measurement": "300g" },
-        { "name": "Shrimp", "measurement": "200g" },
-        { "name": "Mussels", "measurement": "200g" },
-        { "name": "Bell Pepper", "measurement": "1" },
-        { "name": "Garlic", "measurement": "3 cloves" },
-        { "name": "Saffron", "measurement": "a pinch" },
-        { "name": "Chicken Broth", "measurement": "4 cups" },
-        { "name": "Olive Oil", "measurement": "2 tbsp" }
-      ],
-      "instructions": [
-        "In a large pan, heat olive oil and sauté garlic and chicken until browned.",
-        "Add bell pepper and cook for 2 minutes.",
-        "Stir in rice and saffron, followed by chicken broth, and bring to a boil.",
-        "Add shrimp and mussels, cover, and simmer until rice is cooked."
-      ],
-      "time": "1 hour",
-      "cuisine": "Spanish",
-      "imgLink":"https://www.themealdb.com/images/media/meals/1520081754.jpg"
-    },
-    
-    {
-      "id": "34026",
-      "recipe_name": "Sushi Rolls",
-      "category_id": 10,
-      "categoryName":"Miscellaneous",
-      "description": "A popular Japanese dish consisting of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits, rolled in seaweed sheets.",
-      "ingredients": [
-        { "name": "Sushi Rice", "measurement": "2 cups" },
-        { "name": "Nori Sheets", "measurement": "4" },
-        { "name": "Cucumber", "measurement": "1" },
-        { "name": "Avocado", "measurement": "1" },
-        { "name": "Raw Fish (Salmon or Tuna)", "measurement": "200g" },
-        { "name": "Soy Sauce", "measurement": "for dipping" },
-        { "name": "Wasabi", "measurement": "for serving" }
-      ],
-      "instructions": [
-        "Cook sushi rice according to package instructions and let cool.",
-        "Place a nori sheet on a bamboo mat, spread rice, and add fish and vegetables.",
-        "Roll tightly and slice into pieces.",
-        "Serve with soy sauce and wasabi."
-      ],
-      "time": "45 minutes",
-      "cuisine": "Japanese",
-      "imgLink":"https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg"
-    },
-    {
-      "id": "34027",
-      "recipe_name": "Poutine",
-      "category_id": 10,
-      "categoryName":"Miscellaneous",
-      "description": "A Canadian dish consisting of fries topped with cheese curds and smothered in gravy. It’s a deliciously indulgent comfort food that has gained popularity worldwide.",
-      "ingredients": [
-        { "name": "French Fries", "measurement": "400g" },
-        { "name": "Cheese Curds", "measurement": "200g" },
-        { "name": "Brown Gravy", "measurement": "2 cups" },
-        { "name": "Salt", "measurement": "to taste" }
-      ],
-      "instructions": [
-        "Prepare French fries according to package instructions.",
-        "In a saucepan, heat brown gravy until simmering.",
-        "Place fries on a plate, sprinkle with cheese curds, and pour gravy over the top."
-      ],
-      "time": "20 minutes",
-      "cuisine": "American",
-      "imgLink":"https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg"
-    },
-
-    {
-      "id": "34028",
-      "recipe_name": "Souvlaki",
-      "category_id": 5,
-      "categoryName":"Vegetarian",
-      "description": "A traditional Greek dish consisting of small pieces of meat and vegetables grilled on a skewer. It is often served with pita bread and a side of tzatziki sauce.",
-      "ingredients": [
-        { "name": "Pork or Chicken", "measurement": "500g" },
-        { "name": "Bell Pepper", "measurement": "1" },
-        { "name": "Onion", "measurement": "1" },
-        { "name": "Olive Oil", "measurement": "2 tbsp" },
-        { "name": "Lemon Juice", "measurement": "2 tbsp" },
-        { "name": "Salt", "measurement": "to taste" }
-      ],
-      "instructions": [
-        "Cut meat and vegetables into pieces.",
-        "Marinate in olive oil, lemon juice, and salt.",
-        "Skewer meat and vegetables, then grill until cooked through."
-      ],
-      "time": "30 minutes",
-      "cuisine": "Greek",
-      "imgLink":"https://www.themealdb.com/images/media/meals/rjhf741585564676.jpg"
-    },
-    {
-      "id": "34029",
-      "recipe_name": "Chicken Curry",
-      "category_id": 3,
-      "categoryName":"Seafood",
-      "description": "A quick and easy chicken curry made with coconut milk and spices, ready in just 40 minutes.",
-      "ingredients": [
-        { "name": "Chicken Breast", "measurement": "500g, cubed" },
-        { "name": "Coconut Milk", "measurement": "1 can" },
-        { "name": "Curry Powder", "measurement": "2 tbsp" },
-        { "name": "Onion", "measurement": "1, chopped" },
-        { "name": "Garlic", "measurement": "2 cloves, minced" },
-        { "name": "Oil", "measurement": "for cooking" },
-        { "name": "Salt", "measurement": "to taste" }
-      ],
-      "instructions": [
-        "Heat oil in a pot over medium heat and sauté onions until translucent.",
-        "Add garlic and chicken, cooking until chicken is browned.",
-        "Stir in curry powder, then add coconut milk.",
-        "Simmer for 20 minutes until chicken is cooked through.",
-        "Season with salt before serving."
-      ],
-      "time": "40 minutes",
-      "cuisine": "Indian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg"
-    },
-     {
-      "id": "34030",
-      "recipe_name": "Koshari",
-      "category_id": 9,
-      "categoryName":"Side Dish",
-      "description": "A popular Egyptian street food made with rice, lentils, pasta, and topped with spicy tomato sauce and crispy onions.",
-      "ingredients": [
-        { "name": "Rice", "measurement": "1 cup" },
-        { "name": "Lentils", "measurement": "1 cup, cooked" },
-        { "name": "Small Pasta", "measurement": "1 cup" },
-        { "name": "Onion", "measurement": "1, sliced" },
-        { "name": "Tomato Sauce", "measurement": "1 cup" },
-        { "name": "Garlic", "measurement": "3 cloves, minced" },
-        { "name": "Cumin", "measurement": "1 tsp" },
-        { "name": "Chili Powder", "measurement": "to taste" },
-        { "name": "Salt", "measurement": "to taste" },
-        { "name": "Oil", "measurement": "for frying" }
-      ],
-      "instructions": [
-        "Cook rice according to package instructions.",
-        "Cook small pasta according to package instructions.",
-        "In a pan, heat oil and fry the sliced onion until crispy.",
-        "In another pot, mix tomato sauce, garlic, cumin, chili powder, and salt. Simmer for 10 minutes.",
-        "To serve, layer rice, lentils, and pasta on a plate, top with tomato sauce, and sprinkle with crispy onions."
-      ],
-      "time": "40 minutes",
-      "cuisine": "Egyptian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg"
-    },
-    {
-      "id": "34031",
-      "recipe_name": "Fattah",
-      
-      "category_id": 9,
-      "categoryName":"Side Dish",
-      "description": "A traditional Egyptian dish made with layers of rice, bread, and meat, topped with garlic vinegar sauce.",
-      "ingredients": [
-        { "name": "Rice", "measurement": "2 cups" },
-        { "name": "Bread", "measurement": "2 loaves, toasted" },
-        { "name": "Meat (beef or lamb)", "measurement": "500g, cooked" },
-        { "name": "Garlic", "measurement": "4 cloves, minced" },
-        { "name": "Vinegar", "measurement": "1/4 cup" },
-        { "name": "Salt", "measurement": "to taste" },
-        { "name": "Pepper", "measurement": "to taste" },
-        { "name": "Oil", "measurement": "for frying" }
-      ],
-      "instructions": [
-        "Cook rice according to package instructions.",
-        "In a small pan, heat oil and fry garlic until golden, then add vinegar and simmer for 2 minutes.",
-        "In a large dish, layer toasted bread, then rice, then meat.",
-        "Drizzle garlic vinegar sauce on top and serve warm."
-      ],
-      "time": "40 minutes",
-      "cuisine": "Egyptian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/rlwcc51598734603.jpg"
-    },
-    {
-      "id": "34032",
-      "recipe_name": "Molokhia",
-      "category_id": 9,
-      "categoryName":"Side Dish",
-      "description": "A traditional Egyptian green soup made from molokhia leaves, served with rice and chicken.",
-      "ingredients": [
-        { "name": "Molokhia Leaves", "measurement": "500g, chopped" },
-        { "name": "Chicken", "measurement": "500g, cooked" },
-        { "name": "Garlic", "measurement": "4 cloves, minced" },
-        { "name": "Coriander", "measurement": "1 tsp" },
-        { "name": "Chicken Broth", "measurement": "4 cups" },
-        { "name": "Lemon Juice", "measurement": "2 tbsp" },
-        { "name": "Salt", "measurement": "to taste" },
-        { "name": "Pepper", "measurement": "to taste" },
-        { "name": "Oil", "measurement": "for frying" }
-      ],
-      "instructions": [
-        "In a pot, heat oil and fry garlic until golden, add coriander.",
-        "Add chopped molokhia leaves and stir for a few minutes.",
-        "Pour in chicken broth, bring to a boil, then simmer for 15 minutes.",
-        "Serve warm over rice with cooked chicken on the side and a squeeze of lemon juice."
-      ],
-      "time": "40 minutes",
-      "cuisine": "Egyptian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/x372ug1598733932.jpg"
-    },
-    {
-      "id": "34033",
-      "recipe_name": "Feteer Meshaltet",
-      "category_id": 9,
-      "categoryName":"Side Dish",
-      "ingredients":[
-        {"name": "Flour","measurement": "4 cups"
-        },
-        {"name": "Water","measurement": "1 1/2 cups"
+    "last_id": "34037",
+    "recipes": [
+        {
+            "id": "34020",
+            "recipe_name": "Kung Pao Chicken",
+            "category_id": 1,
+            "categoryName": "Chicken",
+            "description": "A spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. It's known for its bold flavors and a delightful mix of textures.",
+            "ingredients": [
+                {
+                    "name": "Chicken Breast",
+                    "measurement": "500g"
+                },
+                {
+                    "name": "Peanuts",
+                    "measurement": "100g"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Green Onions",
+                    "measurement": "3"
+                },
+                {
+                    "name": "Soy Sauce",
+                    "measurement": "3 tbsp"
+                },
+                {
+                    "name": "Chili Paste",
+                    "measurement": "1 tbsp"
+                },
+                {
+                    "name": "Vegetable Oil",
+                    "measurement": "2 tbsp"
+                }
+            ],
+            "instructions": [
+                "Cut the chicken into bite-sized pieces and marinate with soy sauce.",
+                "Heat oil in a wok and stir-fry the chicken until cooked.",
+                "Add peanuts, bell pepper, and green onions, and stir-fry for 3-4 minutes.",
+                "Stir in chili paste and cook for another minute before serving."
+            ],
+            "time": "30 minutes",
+            "cuisine": "Chinese",
+            "imgLink": "https://www.themealdb.com/images/media/meals/1525872624.jpg"
         },
         {
-          "name": "Salt",
-          "measurement": "1/4 tsp"
+            "id": "34021",
+            "recipe_name": "Fried Chicken",
+            "category_id": 1,
+            "categoryName": "Chicken",
+            "description": "A classic American dish featuring chicken pieces that are breaded and deep-fried until golden brown. It\u00e2\u20ac\u2122s crispy on the outside and juicy on the inside.",
+            "ingredients": [
+                {
+                    "name": "Chicken Pieces",
+                    "measurement": "1 kg"
+                },
+                {
+                    "name": "Flour",
+                    "measurement": "2 cups"
+                },
+                {
+                    "name": "Buttermilk",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Paprika",
+                    "measurement": "1 tbsp"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Oil",
+                    "measurement": "for frying"
+                }
+            ],
+            "instructions": [
+                "Marinate chicken in buttermilk for at least 2 hours.",
+                "In a bowl, mix flour, paprika, and salt.",
+                "Dredge marinated chicken in flour mixture and heat oil in a pan.",
+                "Fry chicken pieces until golden brown and cooked through."
+            ],
+            "time": "1 hour",
+            "cuisine": "American",
+            "imgLink": "https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg"
         },
         {
-          "name": "Unsalted Butter",
-          "measurement": "1 cup"
+            "id": "34022",
+            "recipe_name": "Spaghetti Bolognese",
+            "category_id": 4,
+            "categoryName": "Pasta",
+            "description": "An Italian classic, this pasta dish features a rich, meaty sauce made from ground beef, tomatoes, and herbs. It\u00e2\u20ac\u2122s a comforting and hearty meal perfect for any occasion.",
+            "ingredients": [
+                {
+                    "name": "Spaghetti",
+                    "measurement": "200g"
+                },
+                {
+                    "name": "Ground Beef",
+                    "measurement": "400g"
+                },
+                {
+                    "name": "Tomato Sauce",
+                    "measurement": "400g"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "2 cloves"
+                },
+                {
+                    "name": "Olive Oil",
+                    "measurement": "2 tbsp"
+                },
+                {
+                    "name": "Basil",
+                    "measurement": "1 tbsp"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                }
+            ],
+            "instructions": [
+                "Cook spaghetti according to package instructions.",
+                "In a pan, heat olive oil and saut\u0623\u00a9 onions and garlic until soft.",
+                "Add ground beef and cook until browned.",
+                "Stir in tomato sauce, basil, and salt, and simmer for 15 minutes.",
+                "Serve sauce over cooked spaghetti."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Italian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg"
         },
         {
-          "name": "Olive Oil",
-          "measurement": "1/4 cup"
+            "id": "34023",
+            "recipe_name": "Beef Stroganoff",
+            "category_id": 2,
+            "categoryName": "Meat",
+            "description": "A comforting Russian dish of saut\u0623\u00a9ed beef served in a creamy mushroom sauce over noodles. It combines rich flavors and a creamy texture that is perfect for a cozy meal.",
+            "ingredients": [
+                {
+                    "name": "Beef",
+                    "measurement": "500g"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Mushrooms",
+                    "measurement": "250g"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "2 cloves"
+                },
+                {
+                    "name": "Flour",
+                    "measurement": "2 tbsp"
+                },
+                {
+                    "name": "Beef Broth",
+                    "measurement": "2 cups"
+                },
+                {
+                    "name": "Sour Cream",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Black Pepper",
+                    "measurement": "to taste"
+                }
+            ],
+            "instructions": [
+                "Saut\u0623\u00a9 onions and garlic in a pan until softened.",
+                "Add sliced beef and cook until browned.",
+                "Stir in mushrooms and flour, cooking for 2 minutes.",
+                "Gradually add beef broth, simmer for 10 minutes.",
+                "Stir in sour cream, and season with salt and pepper."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Russian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/svprys1511176755.jpg"
+        },
+        {
+            "id": "34024",
+            "recipe_name": "Moussaka",
+            "category_id": 2,
+            "categoryName": "Meat",
+            "description": "A traditional Greek dish layered with eggplant, spiced meat, and topped with a creamy b\u0623\u00a9chamel sauce. It\u00e2\u20ac\u2122s a hearty and comforting dish with rich flavors.",
+            "ingredients": [
+                {
+                    "name": "Eggplant",
+                    "measurement": "2"
+                },
+                {
+                    "name": "Ground Beef",
+                    "measurement": "500g"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Tomato Sauce",
+                    "measurement": "400g"
+                },
+                {
+                    "name": "Milk",
+                    "measurement": "500ml"
+                },
+                {
+                    "name": "Flour",
+                    "measurement": "50g"
+                },
+                {
+                    "name": "Butter",
+                    "measurement": "50g"
+                },
+                {
+                    "name": "Nutmeg",
+                    "measurement": "1/4 tsp"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                }
+            ],
+            "instructions": [
+                "Slice eggplant and salt to draw out moisture.",
+                "Saut\u0623\u00a9 onions and garlic, add ground beef, and cook until browned.",
+                "Layer eggplant, meat mixture, and b\u0623\u00a9chamel in a baking dish.",
+                "Bake until golden and serve warm."
+            ],
+            "time": "1 hour 30 minutes",
+            "cuisine": "Greek",
+            "imgLink": "https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg"
+        },
+        {
+            "id": "34025",
+            "recipe_name": "Paella",
+            "category_id": 3,
+            "categoryName": "Seafood",
+            "description": "A traditional Spanish rice dish that originated in Valencia. It combines seafood, chicken, and vegetables with saffron-infused rice, creating a colorful and flavorful dish.",
+            "ingredients": [
+                {
+                    "name": "Basmati Rice",
+                    "measurement": "2 cups"
+                },
+                {
+                    "name": "Chicken",
+                    "measurement": "300g"
+                },
+                {
+                    "name": "Shrimp",
+                    "measurement": "200g"
+                },
+                {
+                    "name": "Mussels",
+                    "measurement": "200g"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "3 cloves"
+                },
+                {
+                    "name": "Saffron",
+                    "measurement": "a pinch"
+                },
+                {
+                    "name": "Chicken Broth",
+                    "measurement": "4 cups"
+                },
+                {
+                    "name": "Olive Oil",
+                    "measurement": "2 tbsp"
+                }
+            ],
+            "instructions": [
+                "In a large pan, heat olive oil and saut\u0623\u00a9 garlic and chicken until browned.",
+                "Add bell pepper and cook for 2 minutes.",
+                "Stir in rice and saffron, followed by chicken broth, and bring to a boil.",
+                "Add shrimp and mussels, cover, and simmer until rice is cooked."
+            ],
+            "time": "1 hour",
+            "cuisine": "Spanish",
+            "imgLink": "https://www.themealdb.com/images/media/meals/1520081754.jpg"
+        },
+        {
+            "id": "34026",
+            "recipe_name": "Sushi Rolls",
+            "category_id": 10,
+            "categoryName": "Miscellaneous",
+            "description": "A popular Japanese dish consisting of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits, rolled in seaweed sheets.",
+            "ingredients": [
+                {
+                    "name": "Sushi Rice",
+                    "measurement": "2 cups"
+                },
+                {
+                    "name": "Nori Sheets",
+                    "measurement": "4"
+                },
+                {
+                    "name": "Cucumber",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Avocado",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Raw Fish (Salmon or Tuna)",
+                    "measurement": "200g"
+                },
+                {
+                    "name": "Soy Sauce",
+                    "measurement": "for dipping"
+                },
+                {
+                    "name": "Wasabi",
+                    "measurement": "for serving"
+                }
+            ],
+            "instructions": [
+                "Cook sushi rice according to package instructions and let cool.",
+                "Place a nori sheet on a bamboo mat, spread rice, and add fish and vegetables.",
+                "Roll tightly and slice into pieces.",
+                "Serve with soy sauce and wasabi."
+            ],
+            "time": "45 minutes",
+            "cuisine": "Japanese",
+            "imgLink": "https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg"
+        },
+        {
+            "id": "34027",
+            "recipe_name": "Poutine",
+            "category_id": 10,
+            "categoryName": "Miscellaneous",
+            "description": "A Canadian dish consisting of fries topped with cheese curds and smothered in gravy. It\u00e2\u20ac\u2122s a deliciously indulgent comfort food that has gained popularity worldwide.",
+            "ingredients": [
+                {
+                    "name": "French Fries",
+                    "measurement": "400g"
+                },
+                {
+                    "name": "Cheese Curds",
+                    "measurement": "200g"
+                },
+                {
+                    "name": "Brown Gravy",
+                    "measurement": "2 cups"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                }
+            ],
+            "instructions": [
+                "Prepare French fries according to package instructions.",
+                "In a saucepan, heat brown gravy until simmering.",
+                "Place fries on a plate, sprinkle with cheese curds, and pour gravy over the top."
+            ],
+            "time": "20 minutes",
+            "cuisine": "American",
+            "imgLink": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg"
+        },
+        {
+            "id": "34028",
+            "recipe_name": "Souvlaki",
+            "category_id": 5,
+            "categoryName": "Vegetarian",
+            "description": "A traditional Greek dish consisting of small pieces of meat and vegetables grilled on a skewer. It is often served with pita bread and a side of tzatziki sauce.",
+            "ingredients": [
+                {
+                    "name": "Pork or Chicken",
+                    "measurement": "500g"
+                },
+                {
+                    "name": "Bell Pepper",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Olive Oil",
+                    "measurement": "2 tbsp"
+                },
+                {
+                    "name": "Lemon Juice",
+                    "measurement": "2 tbsp"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                }
+            ],
+            "instructions": [
+                "Cut meat and vegetables into pieces.",
+                "Marinate in olive oil, lemon juice, and salt.",
+                "Skewer meat and vegetables, then grill until cooked through."
+            ],
+            "time": "30 minutes",
+            "cuisine": "Greek",
+            "imgLink": "https://www.themealdb.com/images/media/meals/rjhf741585564676.jpg"
+        },
+        {
+            "id": "34029",
+            "recipe_name": "Chicken Curry",
+            "category_id": 3,
+            "categoryName": "Seafood",
+            "description": "A quick and easy chicken curry made with coconut milk and spices, ready in just 40 minutes.",
+            "ingredients": [
+                {
+                    "name": "Chicken Breast",
+                    "measurement": "500g, cubed"
+                },
+                {
+                    "name": "Coconut Milk",
+                    "measurement": "1 can"
+                },
+                {
+                    "name": "Curry Powder",
+                    "measurement": "2 tbsp"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "1, chopped"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "2 cloves, minced"
+                },
+                {
+                    "name": "Oil",
+                    "measurement": "for cooking"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                }
+            ],
+            "instructions": [
+                "Heat oil in a pot over medium heat and saut\u0623\u00a9 onions until translucent.",
+                "Add garlic and chicken, cooking until chicken is browned.",
+                "Stir in curry powder, then add coconut milk.",
+                "Simmer for 20 minutes until chicken is cooked through.",
+                "Season with salt before serving."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Indian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg"
+        },
+        {
+            "id": "34030",
+            "recipe_name": "Koshari",
+            "category_id": 9,
+            "categoryName": "Side Dish",
+            "description": "A popular Egyptian street food made with rice, lentils, pasta, and topped with spicy tomato sauce and crispy onions.",
+            "ingredients": [
+                {
+                    "name": "Rice",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Lentils",
+                    "measurement": "1 cup, cooked"
+                },
+                {
+                    "name": "Small Pasta",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "1, sliced"
+                },
+                {
+                    "name": "Tomato Sauce",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "3 cloves, minced"
+                },
+                {
+                    "name": "Cumin",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Chili Powder",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Oil",
+                    "measurement": "for frying"
+                }
+            ],
+            "instructions": [
+                "Cook rice according to package instructions.",
+                "Cook small pasta according to package instructions.",
+                "In a pan, heat oil and fry the sliced onion until crispy.",
+                "In another pot, mix tomato sauce, garlic, cumin, chili powder, and salt. Simmer for 10 minutes.",
+                "To serve, layer rice, lentils, and pasta on a plate, top with tomato sauce, and sprinkle with crispy onions."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Egyptian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg"
+        },
+        {
+            "id": "34031",
+            "recipe_name": "Fattah",
+            "category_id": 9,
+            "categoryName": "Side Dish",
+            "description": "A traditional Egyptian dish made with layers of rice, bread, and meat, topped with garlic vinegar sauce.",
+            "ingredients": [
+                {
+                    "name": "Rice",
+                    "measurement": "2 cups"
+                },
+                {
+                    "name": "Bread",
+                    "measurement": "2 loaves, toasted"
+                },
+                {
+                    "name": "Meat (beef or lamb)",
+                    "measurement": "500g, cooked"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "4 cloves, minced"
+                },
+                {
+                    "name": "Vinegar",
+                    "measurement": "1/4 cup"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Pepper",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Oil",
+                    "measurement": "for frying"
+                }
+            ],
+            "instructions": [
+                "Cook rice according to package instructions.",
+                "In a small pan, heat oil and fry garlic until golden, then add vinegar and simmer for 2 minutes.",
+                "In a large dish, layer toasted bread, then rice, then meat.",
+                "Drizzle garlic vinegar sauce on top and serve warm."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Egyptian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/rlwcc51598734603.jpg"
+        },
+        {
+            "id": "34032",
+            "recipe_name": "Molokhia",
+            "category_id": 9,
+            "categoryName": "Side Dish",
+            "description": "A traditional Egyptian green soup made from molokhia leaves, served with rice and chicken.",
+            "ingredients": [
+                {
+                    "name": "Molokhia Leaves",
+                    "measurement": "500g, chopped"
+                },
+                {
+                    "name": "Chicken",
+                    "measurement": "500g, cooked"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "4 cloves, minced"
+                },
+                {
+                    "name": "Coriander",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Chicken Broth",
+                    "measurement": "4 cups"
+                },
+                {
+                    "name": "Lemon Juice",
+                    "measurement": "2 tbsp"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Pepper",
+                    "measurement": "to taste"
+                },
+                {
+                    "name": "Oil",
+                    "measurement": "for frying"
+                }
+            ],
+            "instructions": [
+                "In a pot, heat oil and fry garlic until golden, add coriander.",
+                "Add chopped molokhia leaves and stir for a few minutes.",
+                "Pour in chicken broth, bring to a boil, then simmer for 15 minutes.",
+                "Serve warm over rice with cooked chicken on the side and a squeeze of lemon juice."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Egyptian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/x372ug1598733932.jpg"
+        },
+        {
+            "id": "34033",
+            "recipe_name": "Feteer Meshaltet",
+            "category_id": 9,
+            "categoryName": "Side Dish",
+            "ingredients": [
+                {
+                    "name": "Flour",
+                    "measurement": "4 cups"
+                },
+                {
+                    "name": "Water",
+                    "measurement": "1 1/2 cups"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "1/4 tsp"
+                },
+                {
+                    "name": "Unsalted Butter",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Olive Oil",
+                    "measurement": "1/4 cup"
+                }
+            ],
+            "instructions": "Mix the flour and salt then pour one cup of water and start kneading.\r\nIf you feel the dough is still not coming together or too dry, gradually add the remaining water until you get a dough that is very elastic so that when you pull it and it won\u00e2\u20ac\u2122t be torn.\r\nLet the dough rest for just 10 minutes then divide the dough into 6-8 balls depending on the size you want for your feteer.\r\nWarm up the butter/ghee or oil you are using and pour into a deep bowl.\r\nImmerse the dough balls into the warm butter. Let it rest for 15 to 20 minutes.\r\nPreheat oven to 550F.\r\nStretch the first ball with your hands on a clean countertop. Stretch it as thin as you can, the goal here is to see your countertop through the dough.\r\nFold the dough over itself to form a square brushing in between folds with the butter mixture.\r\nSet aside and start making the next ball.\r\nStretch the second one thin as we have done for the first ball.\r\nPlace the previous one on the middle seam side down. Fold the outer one over brushing with more butter mixture as you fold. Set aside.\r\nKeep doing this for the third and fourth balls. Now we have one ready, place on a 10 inch baking/pie dish seam side down and brush the top with more butter.\r\nRepeat for the remaining 4 balls to make a second one. With your hands lightly press the folded feteer to spread it on the baking dish.\r\nPlace in preheated oven for 10 minutes when the feteer starts puffing turn on the broiler to brown the top.\r\nWhen it is done add little butter on top and cover so it won\u00e2\u20ac\u2122t get dry.",
+            "time": "40 minutes",
+            "cuisine": "Egyptian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/9f4z6v1598734293.jpg"
+        },
+        {
+            "id": "34034",
+            "recipe_name": "Shawarma",
+            "category_id": 1,
+            "categoryName": "Chicken",
+            "ingredients": [
+                {
+                    "name": "Chicken Thighs",
+                    "measurement": "1 kg"
+                },
+                {
+                    "name": "Coriander",
+                    "measurement": "1 tbs"
+                },
+                {
+                    "name": "Cumin",
+                    "measurement": "1 tbs"
+                },
+                {
+                    "name": "Cardamom",
+                    "measurement": "1 tbs"
+                },
+                {
+                    "name": "Cayenne Pepper",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Paprika",
+                    "measurement": "2 tsp"
+                },
+                {
+                    "name": "Lemon Juice",
+                    "measurement": "2 tbs"
+                },
+                {
+                    "name": "Olive Oil",
+                    "measurement": "3 tbs"
+                },
+                {
+                    "name": "Greek Yogurt",
+                    "measurement": "1 cup"
+                },
+                {
+                    "name": "Garlic Clove",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Cumin",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Lemon Juice",
+                    "measurement": "Splash"
+                },
+                {
+                    "name": "Lettuce",
+                    "measurement": "Sliced"
+                },
+                {
+                    "name": "Tomato",
+                    "measurement": "Sliced"
+                },
+                {
+                    "name": "Pita Bread",
+                    "measurement": "6"
+                }
+            ],
+            "instructions": "Combine the marinade ingredients in a large ziplock bag (or bowl).\r\nAdd the chicken and use your hands to make sure each piece is coated. If using a ziplock bag, I find it convenient to close the bag then massage the bag to disperse the rub all over each chicken piece.\r\nMarinate overnight or up to 24 hours.\r\nCombine the Yoghurt Sauce ingredients in a bowl and mix. Cover and put in the fridge until required (it will last for 3 days in the fridge).\r\nHeat grill/BBQ (or large heavy based pan on stove) on medium high. You should not need to oil it because the marinade has oil in it and also thigh fillets have fat. But if you are worried then oil your hotplate/grill. (See notes for baking)\r\nPlace chicken on the grill and cook the first side for 4 to 5 minutes until nicely charred, then turn and cook the other side for 3 to 4 minutes (the 2nd side takes less time).\r\nRemove chicken from the grill and cover loosely with foil. Set aside to rest for 5 minutes.\r\nTO SERVE\r\nSlice chicken and pile onto platter alongside flatbreads, Salad and the Yoghurt Sauce.\r\nTo make a wrap, get a piece of flatbread and smear with Yoghurt Sauce. Top with a bit of lettuce and tomato and Chicken Shawarma. Roll up and enjoy!",
+            "time": "40 minutes",
+            "cuisine": "Egyptian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/kcv6hj1598733479.jpg"
+        },
+        {
+            "id": "34035",
+            "recipe_name": "Apple Frangipan Tart",
+            "category_id": 1,
+            "categoryName": "Dessert",
+            "ingredients": [
+                {
+                    "name": "digestive biscuits",
+                    "measurement": "175g/6oz"
+                },
+                {
+                    "name": "butter",
+                    "measurement": "75g/3oz"
+                },
+                {
+                    "name": "Bramley apples",
+                    "measurement": "200g/7oz"
+                },
+                {
+                    "name": "butter, softened",
+                    "measurement": "75g/3oz"
+                },
+                {
+                    "name": "caster sugar",
+                    "measurement": "75g/3oz"
+                },
+                {
+                    "name": "free-range eggs, beaten",
+                    "measurement": "2"
+                },
+                {
+                    "name": "ground almonds",
+                    "measurement": "75g/3oz"
+                },
+                {
+                    "name": "almond extract",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "flaked almonds",
+                    "measurement": "50g/1\u0622\u00beoz"
+                }
+            ],
+            "instructions": "Preheat the oven to 200C/180C Fan/Gas 6.\r\nPut the biscuits in a large re-sealable freezer bag and bash with a rolling pin into fine crumbs. Melt the butter in a small pan, then add the biscuit crumbs and stir until coated with butter. Tip into the tart tin and, using the back of a spoon, press over the base and sides of the tin to give an even layer. Chill in the fridge while you make the filling.\r\nCream together the butter and sugar until light and fluffy. You can do this in a food processor if you have one. Process for 2-3 minutes. Mix in the eggs, then add the ground almonds and almond extract and blend until well combined.\r\nPeel the apples, and cut thin slices of apple. Do this at the last minute to prevent the apple going brown. Arrange the slices over the biscuit base. Spread the frangipane filling evenly on top. Level the surface and sprinkle with the flaked almonds.\r\nBake for 20-25 minutes until golden-brown and set.\r\nRemove from the oven and leave to cool for 15 minutes. Remove the sides of the tin. An easy way to do this is to stand the tin on a can of beans and push down gently on the edges of the tin.\r\nTransfer the tart, with the tin base attached, to a serving plate. Serve warm with cream, cr\u0623\u00a8me fraiche or ice cream.",
+            "time": "40 minutes",
+            "cuisine": "British",
+            "imgLink": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
+        },
+        {
+            "id": "34036",
+            "recipe_name": "Shakshuka",
+            "categoryName": "Breakfast",
+            "ingredients": [
+                {
+                    "name": "Olive Oil",
+                    "measurement": "1 tbs"
+                },
+                {
+                    "name": "chopped Red onions",
+                    "measurement": "2"
+                },
+                {
+                    "name": "chopped Red chili",
+                    "measurement": "1 finely chopped"
+                },
+                {
+                    "name": "clove garlic",
+                    "measurement": "1"
+                },
+                {
+                    "name": "cherry tomatoes",
+                    "measurement": "800g"
+                },
+                {
+                    "name": "Eggs",
+                    "measurement": "4"
+                }
+            ],
+            "instructions": [
+                "Heat the oil in a frying pan that has a lid.",
+                "Add the onions, chili, garlic, and coriander stalks, and soften for 5 minutes until soft.",
+                "Stir in the tomatoes and sugar, then bubble for 8-10 minutes until thick.",
+                "Make 4 dips in the sauce using the back of a large spoon, then crack an egg into each one.",
+                "Put a lid on the pan and cook over low heat for 6-8 minutes, until the eggs are done to your liking.",
+                "Scatter with coriander leaves and serve with crusty bread."
+            ],
+            "time": "40 minutes",
+            "cuisine": "Egyptian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg"
         }
-      ],
-      "instructions":"Mix the flour and salt then pour one cup of water and start kneading.\r\nIf you feel the dough is still not coming together or too dry, gradually add the remaining water until you get a dough that is very elastic so that when you pull it and it won’t be torn.\r\nLet the dough rest for just 10 minutes then divide the dough into 6-8 balls depending on the size you want for your feteer.\r\nWarm up the butter/ghee or oil you are using and pour into a deep bowl.\r\nImmerse the dough balls into the warm butter. Let it rest for 15 to 20 minutes.\r\nPreheat oven to 550F.\r\nStretch the first ball with your hands on a clean countertop. Stretch it as thin as you can, the goal here is to see your countertop through the dough.\r\nFold the dough over itself to form a square brushing in between folds with the butter mixture.\r\nSet aside and start making the next ball.\r\nStretch the second one thin as we have done for the first ball.\r\nPlace the previous one on the middle seam side down. Fold the outer one over brushing with more butter mixture as you fold. Set aside.\r\nKeep doing this for the third and fourth balls. Now we have one ready, place on a 10 inch baking/pie dish seam side down and brush the top with more butter.\r\nRepeat for the remaining 4 balls to make a second one. With your hands lightly press the folded feteer to spread it on the baking dish.\r\nPlace in preheated oven for 10 minutes when the feteer starts puffing turn on the broiler to brown the top.\r\nWhen it is done add little butter on top and cover so it won’t get dry.",
-
-      "time": "40 minutes",
-      "cuisine": "Egyptian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/9f4z6v1598734293.jpg"
-
-    },
-     {
-      "id": "34034",
-      "recipe_name": "Shawarma",
-      "category_id": 1,
-      "categoryName":"Chicken",
-      "ingredients": [
-        {"name": "Chicken Thighs","measurement": "1 kg" },
-        {"name": "Coriander", "measurement": "1 tbs"},
-        { "name": "Cumin", "measurement": "1 tbs" },
-        {
-          "name": "Cardamom",
-          "measurement": "1 tbs"
-        },
-        {
-          "name": "Cayenne Pepper",
-          "measurement": "1 tsp"
-        },
-        {
-          "name": "Paprika",
-          "measurement": "2 tsp"
-        },
-        {
-          "name": "Lemon Juice",
-          "measurement": "2 tbs"
-        },
-        {
-          "name": "Olive Oil",
-          "measurement": "3 tbs"
-        },
-        {
-          "name": "Greek Yogurt",
-          "measurement": "1 cup"
-        },
-        {
-          "name": "Garlic Clove",
-          "measurement": "1"
-        },
-        {
-          "name": "Cumin",
-          "measurement": "1 tsp"
-        },
-        {
-          "name": "Lemon Juice",
-          "measurement": "Splash"
-        },
-        {
-          "name": "Lettuce",
-          "measurement": "Sliced"
-        },
-        {
-          "name": "Tomato",
-          "measurement": "Sliced"
-        },
-        {
-          "name": "Pita Bread",
-          "measurement": "6"
-        }
-      ],
-      "instructions": "Combine the marinade ingredients in a large ziplock bag (or bowl).\r\nAdd the chicken and use your hands to make sure each piece is coated. If using a ziplock bag, I find it convenient to close the bag then massage the bag to disperse the rub all over each chicken piece.\r\nMarinate overnight or up to 24 hours.\r\nCombine the Yoghurt Sauce ingredients in a bowl and mix. Cover and put in the fridge until required (it will last for 3 days in the fridge).\r\nHeat grill/BBQ (or large heavy based pan on stove) on medium high. You should not need to oil it because the marinade has oil in it and also thigh fillets have fat. But if you are worried then oil your hotplate/grill. (See notes for baking)\r\nPlace chicken on the grill and cook the first side for 4 to 5 minutes until nicely charred, then turn and cook the other side for 3 to 4 minutes (the 2nd side takes less time).\r\nRemove chicken from the grill and cover loosely with foil. Set aside to rest for 5 minutes.\r\nTO SERVE\r\nSlice chicken and pile onto platter alongside flatbreads, Salad and the Yoghurt Sauce.\r\nTo make a wrap, get a piece of flatbread and smear with Yoghurt Sauce. Top with a bit of lettuce and tomato and Chicken Shawarma. Roll up and enjoy!",
-
-      "time": "40 minutes",
-      "cuisine": "Egyptian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/kcv6hj1598733479.jpg"
-
-    },
-     {
-      "id": "34035",
-      "recipe_name": "Apple Frangipan Tart",
-      "category_id": 1,
-      "categoryName":"Dessert",
-      "ingredients": [
-        {
-          "name": "digestive biscuits",
-          "measurement": "175g/6oz"
-        },
-        {
-          "name": "butter",
-          "measurement": "75g/3oz"
-        },
-        {
-          "name": "Bramley apples",
-          "measurement": "200g/7oz"
-        },
-        {
-          "name": "butter, softened",
-          "measurement": "75g/3oz"
-        },
-        {
-          "name": "caster sugar",
-          "measurement": "75g/3oz"
-        },
-        {
-          "name": "free-range eggs, beaten",
-          "measurement": "2"
-        },
-        {
-          "name": "ground almonds",
-          "measurement": "75g/3oz"
-        },
-        {
-          "name": "almond extract",
-          "measurement": "1 tsp"
-        },
-         {
-          "name": "flaked almonds",
-          "measurement": "50g/1¾oz"
-        }
-      ],
-      "instructions":"Preheat the oven to 200C/180C Fan/Gas 6.\r\nPut the biscuits in a large re-sealable freezer bag and bash with a rolling pin into fine crumbs. Melt the butter in a small pan, then add the biscuit crumbs and stir until coated with butter. Tip into the tart tin and, using the back of a spoon, press over the base and sides of the tin to give an even layer. Chill in the fridge while you make the filling.\r\nCream together the butter and sugar until light and fluffy. You can do this in a food processor if you have one. Process for 2-3 minutes. Mix in the eggs, then add the ground almonds and almond extract and blend until well combined.\r\nPeel the apples, and cut thin slices of apple. Do this at the last minute to prevent the apple going brown. Arrange the slices over the biscuit base. Spread the frangipane filling evenly on top. Level the surface and sprinkle with the flaked almonds.\r\nBake for 20-25 minutes until golden-brown and set.\r\nRemove from the oven and leave to cool for 15 minutes. Remove the sides of the tin. An easy way to do this is to stand the tin on a can of beans and push down gently on the edges of the tin.\r\nTransfer the tart, with the tin base attached, to a serving plate. Serve warm with cream, crème fraiche or ice cream.",
-
-      "time": "40 minutes",
-      "cuisine": "British",
-      "imgLink":"https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
-
-    },
-    
-      {
-      "id": "34036",
-      "recipe_name": "Shakshuka",
-  
-      "categoryName":"Breakfast",
-      "ingredients": [
-        {
-          "name": "Olive Oil",
-          "measurement": "1 tbs"
-        },
-        {
-          "name": "chopped Red onions",
-          "measurement": "2"
-        },
-        {
-          "name": "chopped Red chili",
-          "measurement": "1 finely chopped"
-        },
-        {
-          "name": "clove garlic",
-          "measurement": "1"
-        },
-        {
-          "name": "cherry tomatoes",
-          "measurement": "800g"
-        },
-        {
-          "name": "Eggs",
-          "measurement": "4"
-        }
-      ],
-     "instructions": [
-      "Heat the oil in a frying pan that has a lid.",
-      "Add the onions, chili, garlic, and coriander stalks, and soften for 5 minutes until soft.",
-      "Stir in the tomatoes and sugar, then bubble for 8-10 minutes until thick.",
-      "Make 4 dips in the sauce using the back of a large spoon, then crack an egg into each one.",
-      "Put a lid on the pan and cook over low heat for 6-8 minutes, until the eggs are done to your liking.",
-      "Scatter with coriander leaves and serve with crusty bread."
-    ],
-      "time": "40 minutes",
-      "cuisine": "Egyptian",
-      "imgLink":"https://www.themealdb.com/images/media/meals/g373701551450225.jpg"
-
-     },
-      {
-      "id": "34037",
-      "recipe_name": "Seafood fideu",
-  
-      "categoryName":"Seafood",
-      "ingredients": [
-        {
-          "name": "Mussels",
-          "measurement": "400 g"
-        },
-        {
-          "name": "prawns",
-          "measurement": "8"
-        },
-        {
-          "name": "saffron",
-          "measurement": "2 pinches"
-        },
-        {
-          "name": "vermicelli",
-          "measurement": "350 g"
-        },
-        {
-          "name": "Olive Oil",
-          "measurement": "5 tblsp"
-        },
-        {
-          "name": "onions",
-          "measurement": "1"
-        },
-        {
-          "name": "clove garlic",
-          "measurement": "3"
-        },
-        {
-          "name": "Paprika",
-          "measurement": "2 tbs"
-        },
-        {
-          "name": "tail monkfidh",
-          "measurement": "1"
-        },
-        {
-          "name": "baby squid",
-          "measurement": "4"
-        },
-        {
-          "name": "fish stock",
-          "measurement": "650 ml"
-        },
-        {
-          "name": "Tomato",
-          "measurement": "2"
-        },
-        {
-          "name": "Lemon Juice",
-          "measurement": "1"
-        }
-      ],
-     "instructions": [
-     "Rinse mussels and discard any broken ones.",
-      "Prepare prawns and soak saffron in hot water.",
-      "Heat oil, cook onion and garlic, then add vermicelli and paprika.",
-      "Stir in seafood and saffron water, then add stock and tomatoes.",
-      "Cover and simmer for 6 minutes, then add mussels and prawns.",
-      "Cook until mussels open, let sit, then add lemon juice and parsley."
-    ],
-      "time": "40 minutes",
-      "cuisine": "Spanish",
-      "imgLink":"https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg"
-
-     }
-
-
-  ]
+    ]
 }
