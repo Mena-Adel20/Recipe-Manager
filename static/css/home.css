@@ -5,7 +5,7 @@ body {
     flex-direction: column;
 }
 
-.container-pag1 {
+.container-pag1 {   
     width: 100%;
     height: 80vh;
     display: flex;

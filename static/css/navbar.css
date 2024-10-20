@@ -1,19 +1,30 @@
+/* Body styles */
 body {
     background-color: #0F182C;
     color: #fff;
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-top: 70px;
+    /* Adjusted to prevent the nav bar from overlapping the content */
 }
 
+/* Navigation bar styles */
 .navbar {
     background-color: #27355A;
     padding: 15px 0;
-    position: relative;
+    position: fixed;
+    /* Keeps the nav bar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
+    z-index: 100;
+    /* Ensures the nav bar stays on top of other content */
 }
 
+/* Container inside the nav bar */
 .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -23,6 +34,7 @@ body {
     padding: 0 20px;
 }
 
+/* Branding styles */
 .navbar-brand a {
     font-size: 24px;
     font-weight: bold;
@@ -30,6 +42,7 @@ body {
     text-decoration: none;
 }
 
+/* Menu styles */
 .navbar-menu {
     list-style: none;
     padding: 0;
@@ -37,10 +50,12 @@ body {
     display: flex;
 }
 
+/* Menu item styles */
 .navbar-menu li {
     margin: 0 15px;
 }
 
+/* Link styles */
 .navbar-menu a {
     color: #DDE4ED;
     text-decoration: none;
@@ -49,11 +64,13 @@ body {
     transition: background-color 0.3s;
 }
 
+/* Hover effect for links */
 .navbar-menu a:hover {
     background-color: #0e5a90;
     color: #fff;
 }
 
+/* Content section */
 .content {
     padding: 20px;
 }
