@@ -5,7 +5,7 @@ categoryItem.forEach(function (item) {
     // Get the data-id attribute value from the clicked item
     const categoryName = item.dataset.id;
     // Redirect the user to the recipe details page .
-    window.location.href = "/home/" + categoryName;
+    window.location.href = "/" + categoryName;
   });
 });
 

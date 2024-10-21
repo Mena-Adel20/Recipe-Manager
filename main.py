@@ -8,7 +8,7 @@ app = Flask("main")
 app.secret_key = 'otaku'
 
 # Directory where the uploaded images will be saved
-UPLOAD_FOLDER = r"D:\RC\Recipe-Manager\static\uploads"
+UPLOAD_FOLDER = r".\static\uploads"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
@@ -47,7 +47,7 @@ def signup():
 
 #**********************************************************************************
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/login", methods=["POST", "GET"])
 def login():
     validation_message = None
     if 'email' in session:
@@ -72,11 +72,11 @@ def login():
     return render_template('login.html', validation_message=validation_message)
 
 #**********************************************************************************
-@app.route("/home")
+@app.route("/")
 def home():
-    # Check if user is not logged in, redirect to the login page
-    if 'email' not in session:
-        return redirect('/')
+    # # Check if user is not logged in, redirect to the login page
+    # if 'email' not in session:
+    #     return redirect('/')
 
     categories_data = db.load_json("categories.json")
     return render_template("index.html", categories=categories_data["categories"])
@@ -84,7 +84,7 @@ def home():
 #**********************************************************************************
 
 #routing to categoty page
-@app.route("/home/<category_name>")
+@app.route("/<category_name>")
 def category_name(category_name):
 
     recipes_data = db.load_json("recipes.json")
@@ -107,6 +107,10 @@ def recipe_details(id):
 
 @app.route('/addrecipe', methods=['GET', 'POST'])
 def addrecipe():
+    if 'email' not in session:
+        flash('Please log in to view your recipes.')
+        return redirect(url_for('login'))
+    
     if request.method == 'POST':
         photo = request.files['photo']
         photo_filename = None
@@ -152,6 +156,9 @@ def your_recipes():
 
 @app.route('/filter', methods=['GET'])
 def filter_recipes():
+    if 'email' not in session:
+        flash('Please log in to view your recipes.')
+        return redirect(url_for('login'))
     # Get the selected filters from query parameters
     selected_cuisines = request.args.getlist('cuisine')
     selected_times = request.args.getlist('time')
@@ -165,6 +172,9 @@ def filter_recipes():
 
 @app.route('/delete-recipe/<id>', methods=['POST'])
 def delete_recipe(id):
+    if 'email' not in session:
+        flash('Please log in to view your recipes.')
+        return redirect(url_for('login'))
     recipe = recipe_manager.get_recipe(id)
     if recipe and recipe['imgLink']:
         photo_file_path = os.path.join('static', 'uploads', 
@@ -182,6 +192,10 @@ def delete_recipe(id):
 
 @app.route('/editrecipe/<recipe_id>', methods=['GET', 'POST'])
 def edit_recipe(recipe_id):
+    if 'email' not in session:
+        flash('Please log in to view your recipes.')
+        return redirect(url_for('login'))
+    
     if request.method == 'POST':
         photo = request.files.get('photo')
         photo_filename = None
@@ -218,7 +232,7 @@ def logout():
         # Remove email from session
         session.pop('email')
     
-    return redirect(url_for('login'))
+    return redirect(url_for('index'))
 
 
 #**********************************************************************************

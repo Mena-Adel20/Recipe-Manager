@@ -36,7 +36,7 @@ document
     // Handle the "OK" button click
     document.getElementById("okButton").addEventListener("click", function () {
       modal.style.display = "none";
-      window.location.href = "/home"; // Redirect to home page after closing the modal
+      window.location.href = "/"; // Redirect to home page after closing the modal
 
       // After closing the modal, submit the form programmatically
       document.getElementById("recipeForm").submit();
