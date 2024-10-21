@@ -19,9 +19,9 @@ class RecipeManager:
             return data['last_id']
         
 
-    def add_recipe(self, recipe_data, photo_filename=None):
+    def add_recipe(self, recipe_data, photo_filename=None,new_id=None):
         data = self.db.load_json(self.db.recipe_file)
-        new_id = self.get_next_id()
+        # new_id = self.get_next_id()
         new_recipe = {
             "id": new_id,
             "recipe_name": recipe_data['recipe_name'],
@@ -34,7 +34,6 @@ class RecipeManager:
         }
         data['recipes'].append(new_recipe)
         self.db.save_json(self.db.recipe_file, data)
-        return new_id
 
     def get_recipe(self, recipe_id):
         data = self.db.load_json(self.db.recipe_file)

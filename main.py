@@ -124,7 +124,10 @@ def addrecipe():
             'instructions': request.form['instructions'],
             'time': request.form['time']
         }
-        recipe_id = recipe_manager.add_recipe(recipe_data, photo_filename)
+        recipe_id = request.form.get('id')  # Get the ID from the form
+
+        recipe_manager.add_recipe(recipe_data, photo_filename,recipe_id)
+
 
 
         if 'email' in session:
