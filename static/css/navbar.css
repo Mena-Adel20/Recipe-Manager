@@ -11,7 +11,7 @@ body {
 /* Navigation bar styles */
 .navbar {
     background-color: #27355A;
-    padding: 15px 0;
+    padding: 4px 0;
     position: fixed;
     /* Keeps the nav bar at the top */
     top: 0;
@@ -74,3 +74,17 @@ body {
 .content {
     padding: 20px;
 }
+/* Logo styles */
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-brand .logo {
+    height: 60px;
+    /* Adjust the size as needed */
+    margin-right: 10px;
+    width: 100;
+}
+
