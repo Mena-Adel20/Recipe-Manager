@@ -4,6 +4,8 @@ const use_recipe = document.getElementById("user-recipes");
 const login = document.getElementById("log-in");
 const signup = document.getElementById("sign-up");
 const logout = document.getElementById("logout-button");
+const userEmail = document.getElementById("user-email");
+let localEmail = localStorage.getItem("email");
 
 home.addEventListener("click", function () {
   window.location.href = "/";
@@ -19,12 +21,13 @@ login.addEventListener("click", function () {
 signup.addEventListener("click", function () {
   window.location.href = "/signup";
 });
-
-const userEmail = document.getElementById("user-email");
-let localEmail = localStorage.getItem("email");
+function removeDomain(email) {
+  return email.split("@")[0];
+}
+let user_name = removeDomain(localEmail);
 
 if (localEmail) {
-  userEmail.textContent = "Welcome, " + localEmail;
+  userEmail.textContent = "Welcome, " + user_name;
   logout.style.display = "block";
   login.style.display = "none";
   signup.style.display = "none";

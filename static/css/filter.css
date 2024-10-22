@@ -232,3 +232,20 @@ button {
 .cancel-button:hover {
     background-color: #999;
 }
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder img {
+    width: 50%;
+}
+
+.placeholder p {
+    font-size: x-large;
+    text-align: center;
+    color: #DDE4ED;
+    margin-top: 24px;
+}
