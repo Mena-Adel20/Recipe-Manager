@@ -1032,6 +1032,77 @@
             "time": "40 minutes",
             "cuisine": "Japanese",
             "imgLink": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg"
+        },
+        {
+            "id": "34042",
+            "recipe_name": " Apple & Blackberry Crumble",
+            "category_id": 2,
+            "categoryName": "Dessert",
+            "ingredients": [
+                {
+                    "name": "Plain Flour",
+                    "measurement": "120g"
+                },
+                {
+                    "name": "Caster Suger",
+                    "measurement": "60g"
+                },
+                {
+                    "name": "butter",
+                    "measurement": "60g"
+                },
+                {
+                    "name": "Braeburn Apples",
+                    "measurement": "300g"
+                },
+                {
+                    "name": "Butter",
+                    "measurement": "30g"
+                },
+                {
+                    "name": "Demerara Suger",
+                    "measurement": "30g"
+                },
+                {
+                    "name": "Blackberrys",
+                    "measurement": "120g"
+                },
+                {
+                    "name": "Cinnamon",
+                    "measurement": "1/4 tsp"
+                }
+            ],
+            "instructions": "Heat oven to 190C/170C fan/gas 5. Tip the flour and sugar into a large bowl. Add the butter, then rub into the flour using your fingertips to make a light breadcrumb texture. Do not overwork it or the crumble will become heavy. Sprinkle the mixture evenly over a baking sheet and bake for 15 mins or until lightly coloured. Meanwhile, for the compote, peel, core and cut the apples into 2cm dice. Put the butter and sugar in a medium saucepan and melt together over a medium heat. Cook for 3 mins until the mixture turns to a light caramel. Stir in the apples and cook for 3 mins. Add the blackberries and cinnamon, and cook for 3 mins more. Cover, remove from the heat, then leave for 2-3 mins to continue cooking in the warmth of the pan. To serve, spoon the warm fruit into an ovenproof gratin dish, top with the crumble mix, then reheat in the oven for 5-10 mins. Serve with vanilla ice cream.",
+            "time": "30 minutes",
+            "cuisine": "American",
+            "imgLink": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
+        },
+        {
+            "id": "34043",
+            "recipe_name": "Pancakes",
+            "categoryName": "Dessert",
+            "cuisine": "American",
+            "ingredients": [
+                {
+                    "name": "floure",
+                    "measurement": "100g"
+                },
+                {
+                    "name": "egg",
+                    "measurement": "2"
+                },
+                {
+                    "name": "milk",
+                    "measurement": "300ml"
+                },
+                {
+                    "name": "suger",
+                    "measurement": "2tsp"
+                }
+            ],
+            "instructions": "Put the flour, eggs, milk, 1 tbsp oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.\r\nSet aside for 30 mins to rest if you have time, or start cooking straight away.\r\nSet a medium frying pan or cr\u00eape pan over a medium heat and carefully wipe it with some oiled kitchen paper.\r\nWhen hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you go.\r\nServe with lemon wedges and sugar, or your favourite filling.\r\nOnce cold, you can layer the pancakes between baking parchment, then wrap in cling film and freeze for up to 2 months.\r\n\r\n",
+            "time": "15 minutes",
+            "imgLink": "../static/uploads/pancake.jpg"
         }
     ]
 }

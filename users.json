@@ -1,19 +1,12 @@
 {
     "users": [
         {
-            "email": "20200777@stud.fci-cu.edu.eg",
-            "pass": "1234567",
-            "user": "mena Adel",
-            "date": "2024-10-19",
-            "recipes": []
-        },
-        {
-            "email": "menaadel1276@gmail.com",
+            "email": "menaadel@gmail.com",
             "pass": "123456",
-            "user": "20201176",
-            "date": "2024-10-20",
+            "user": "Mena",
+            "date": "2024-10-22",
             "recipes": [
-               
+                "34043"
             ]
         }
     ]
