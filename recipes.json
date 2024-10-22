@@ -1,12 +1,10 @@
 {
-    "last_id": "34037",
     "recipes": [
         {
             "id": "34020",
             "recipe_name": "Kung Pao Chicken",
             "category_id": 1,
             "categoryName": "Chicken",
-            "description": "A spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers. It's known for its bold flavors and a delightful mix of textures.",
             "ingredients": [
                 {
                     "name": "Chicken Breast",
@@ -52,7 +50,6 @@
             "recipe_name": "Fried Chicken",
             "category_id": 1,
             "categoryName": "Chicken",
-            "description": "A classic American dish featuring chicken pieces that are breaded and deep-fried until golden brown. It\u00e2\u20ac\u2122s crispy on the outside and juicy on the inside.",
             "ingredients": [
                 {
                     "name": "Chicken Pieces",
@@ -85,7 +82,7 @@
                 "Dredge marinated chicken in flour mixture and heat oil in a pan.",
                 "Fry chicken pieces until golden brown and cooked through."
             ],
-            "time": "1 hour",
+            "time": "60 minutes",
             "cuisine": "American",
             "imgLink": "https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg"
         },
@@ -94,7 +91,6 @@
             "recipe_name": "Spaghetti Bolognese",
             "category_id": 4,
             "categoryName": "Pasta",
-            "description": "An Italian classic, this pasta dish features a rich, meaty sauce made from ground beef, tomatoes, and herbs. It\u00e2\u20ac\u2122s a comforting and hearty meal perfect for any occasion.",
             "ingredients": [
                 {
                     "name": "Spaghetti",
@@ -145,7 +141,6 @@
             "recipe_name": "Beef Stroganoff",
             "category_id": 2,
             "categoryName": "Meat",
-            "description": "A comforting Russian dish of saut\u0623\u00a9ed beef served in a creamy mushroom sauce over noodles. It combines rich flavors and a creamy texture that is perfect for a cozy meal.",
             "ingredients": [
                 {
                     "name": "Beef",
@@ -200,7 +195,6 @@
             "recipe_name": "Moussaka",
             "category_id": 2,
             "categoryName": "Meat",
-            "description": "A traditional Greek dish layered with eggplant, spiced meat, and topped with a creamy b\u0623\u00a9chamel sauce. It\u00e2\u20ac\u2122s a hearty and comforting dish with rich flavors.",
             "ingredients": [
                 {
                     "name": "Eggplant",
@@ -245,7 +239,7 @@
                 "Layer eggplant, meat mixture, and b\u0623\u00a9chamel in a baking dish.",
                 "Bake until golden and serve warm."
             ],
-            "time": "1 hour 30 minutes",
+            "time": "90 minutes",
             "cuisine": "Greek",
             "imgLink": "https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg"
         },
@@ -254,7 +248,6 @@
             "recipe_name": "Paella",
             "category_id": 3,
             "categoryName": "Seafood",
-            "description": "A traditional Spanish rice dish that originated in Valencia. It combines seafood, chicken, and vegetables with saffron-infused rice, creating a colorful and flavorful dish.",
             "ingredients": [
                 {
                     "name": "Basmati Rice",
@@ -299,16 +292,15 @@
                 "Stir in rice and saffron, followed by chicken broth, and bring to a boil.",
                 "Add shrimp and mussels, cover, and simmer until rice is cooked."
             ],
-            "time": "1 hour",
+            "time": "60 minutes",
             "cuisine": "Spanish",
             "imgLink": "https://www.themealdb.com/images/media/meals/1520081754.jpg"
         },
         {
             "id": "34026",
             "recipe_name": "Sushi Rolls",
-            "category_id": 10,
+            "category_id": 4,
             "categoryName": "Miscellaneous",
-            "description": "A popular Japanese dish consisting of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits, rolled in seaweed sheets.",
             "ingredients": [
                 {
                     "name": "Sushi Rice",
@@ -352,9 +344,8 @@
         {
             "id": "34027",
             "recipe_name": "Poutine",
-            "category_id": 10,
+            "category_id": 4,
             "categoryName": "Miscellaneous",
-            "description": "A Canadian dish consisting of fries topped with cheese curds and smothered in gravy. It\u00e2\u20ac\u2122s a deliciously indulgent comfort food that has gained popularity worldwide.",
             "ingredients": [
                 {
                     "name": "French Fries",
@@ -387,7 +378,6 @@
             "recipe_name": "Souvlaki",
             "category_id": 5,
             "categoryName": "Vegetarian",
-            "description": "A traditional Greek dish consisting of small pieces of meat and vegetables grilled on a skewer. It is often served with pita bread and a side of tzatziki sauce.",
             "ingredients": [
                 {
                     "name": "Pork or Chicken",
@@ -428,7 +418,6 @@
             "recipe_name": "Chicken Curry",
             "category_id": 3,
             "categoryName": "Seafood",
-            "description": "A quick and easy chicken curry made with coconut milk and spices, ready in just 40 minutes.",
             "ingredients": [
                 {
                     "name": "Chicken Breast",
@@ -473,9 +462,8 @@
         {
             "id": "34030",
             "recipe_name": "Koshari",
-            "category_id": 9,
-            "categoryName": "Side Dish",
-            "description": "A popular Egyptian street food made with rice, lentils, pasta, and topped with spicy tomato sauce and crispy onions.",
+            "category_id": 8,
+            "categoryName": "Vegetarian",
             "ingredients": [
                 {
                     "name": "Rice",
@@ -525,7 +513,7 @@
                 "In another pot, mix tomato sauce, garlic, cumin, chili powder, and salt. Simmer for 10 minutes.",
                 "To serve, layer rice, lentils, and pasta on a plate, top with tomato sauce, and sprinkle with crispy onions."
             ],
-            "time": "40 minutes",
+            "time": "60 minutes",
             "cuisine": "Egyptian",
             "imgLink": "https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg"
         },
@@ -533,8 +521,7 @@
             "id": "34031",
             "recipe_name": "Fattah",
             "category_id": 9,
-            "categoryName": "Side Dish",
-            "description": "A traditional Egyptian dish made with layers of rice, bread, and meat, topped with garlic vinegar sauce.",
+            "categoryName": "Side",
             "ingredients": [
                 {
                     "name": "Rice",
@@ -582,9 +569,8 @@
         {
             "id": "34032",
             "recipe_name": "Molokhia",
-            "category_id": 9,
-            "categoryName": "Side Dish",
-            "description": "A traditional Egyptian green soup made from molokhia leaves, served with rice and chicken.",
+            "category_id": 8,
+            "categoryName": "Vegetarian",
             "ingredients": [
                 {
                     "name": "Molokhia Leaves",
@@ -629,7 +615,7 @@
                 "Pour in chicken broth, bring to a boil, then simmer for 15 minutes.",
                 "Serve warm over rice with cooked chicken on the side and a squeeze of lemon juice."
             ],
-            "time": "40 minutes",
+            "time": "20 minutes",
             "cuisine": "Egyptian",
             "imgLink": "https://www.themealdb.com/images/media/meals/x372ug1598733932.jpg"
         },
@@ -637,7 +623,7 @@
             "id": "34033",
             "recipe_name": "Feteer Meshaltet",
             "category_id": 9,
-            "categoryName": "Side Dish",
+            "categoryName": "Breakfast",
             "ingredients": [
                 {
                     "name": "Flour",
@@ -661,7 +647,7 @@
                 }
             ],
             "instructions": "Mix the flour and salt then pour one cup of water and start kneading.\r\nIf you feel the dough is still not coming together or too dry, gradually add the remaining water until you get a dough that is very elastic so that when you pull it and it won\u00e2\u20ac\u2122t be torn.\r\nLet the dough rest for just 10 minutes then divide the dough into 6-8 balls depending on the size you want for your feteer.\r\nWarm up the butter/ghee or oil you are using and pour into a deep bowl.\r\nImmerse the dough balls into the warm butter. Let it rest for 15 to 20 minutes.\r\nPreheat oven to 550F.\r\nStretch the first ball with your hands on a clean countertop. Stretch it as thin as you can, the goal here is to see your countertop through the dough.\r\nFold the dough over itself to form a square brushing in between folds with the butter mixture.\r\nSet aside and start making the next ball.\r\nStretch the second one thin as we have done for the first ball.\r\nPlace the previous one on the middle seam side down. Fold the outer one over brushing with more butter mixture as you fold. Set aside.\r\nKeep doing this for the third and fourth balls. Now we have one ready, place on a 10 inch baking/pie dish seam side down and brush the top with more butter.\r\nRepeat for the remaining 4 balls to make a second one. With your hands lightly press the folded feteer to spread it on the baking dish.\r\nPlace in preheated oven for 10 minutes when the feteer starts puffing turn on the broiler to brown the top.\r\nWhen it is done add little butter on top and cover so it won\u00e2\u20ac\u2122t get dry.",
-            "time": "40 minutes",
+            "time": "90 minutes",
             "cuisine": "Egyptian",
             "imgLink": "https://www.themealdb.com/images/media/meals/9f4z6v1598734293.jpg"
         },
@@ -823,9 +809,229 @@
                 "Put a lid on the pan and cook over low heat for 6-8 minutes, until the eggs are done to your liking.",
                 "Scatter with coriander leaves and serve with crusty bread."
             ],
-            "time": "40 minutes",
+            "time": "15 minutes",
             "cuisine": "Egyptian",
             "imgLink": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg"
+        },
+        {
+            "id": "34037",
+            "recipe_name": "Fettucine alfredo",
+            "category_id": 4,
+            "categoryName": "Pasta",
+            "ingredients": [
+                {
+                    "name": "Clotted Cream",
+                    "measurement": "227g"
+                },
+                {
+                    "name": "Butter",
+                    "measurement": "25g"
+                },
+                {
+                    "name": "Corn Flour ",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Parmesan cheese",
+                    "measurement": "100g"
+                },
+                {
+                    "name": "fettuccine",
+                    "measurement": "250g"
+                },
+                {
+                    "name": "Grated Nutmeg",
+                    "measurement": ""
+                },
+                {
+                    "name": "Chopped Parsley",
+                    "measurement": ""
+                }
+            ],
+            "instructions": "In a medium saucepan, stir the clotted cream, butter and cornflour over a low heat and bring to a low simmer. Turn off the heat and keep warm. Meanwhile, put the cheese and nutmeg in a small bowl and add a good grinding of black pepper, then stir everything together (don\u00e2\u20ac\u2122t add any salt at this stage). Put the pasta in another pan with 2 tsp salt, pour over some boiling water and cook following pack instructions (usually 3-4 mins). When cooked, scoop some of the cooking water into a heatproof jug or mug and drain the pasta, but not too thoroughly. Add the pasta to the pan with the clotted cream mixture, then sprinkle over the cheese and gently fold everything together over a low heat using a rubber spatula. When combined, splash in 3 tbsp of the cooking water. At first, the pasta will look wet and sloppy: keep stirring until the water is absorbed and the sauce is glossy. Check the seasoning before transferring to heated bowls. Sprinkle over some chives or parsley, then serve immediately.",
+            "time": "30 minutes",
+            "cuisine": "Italian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/uquqtu1511178042.jpg"
+        },
+        {
+            "id": "34038",
+            "recipe_name": "Pizza Express Margherita",
+            "category_id": 4,
+            "categoryName": "Side",
+            "ingredients": [
+                {
+                    "name": "Water",
+                    "measurement": "150 ml"
+                },
+                {
+                    "name": "Suger",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Yeast",
+                    "measurement": "15g"
+                },
+                {
+                    "name": "Plain Flour",
+                    "measurement": "225g"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "1 1/2 tsp"
+                },
+                {
+                    "name": "Drizzle Olive Oil",
+                    "measurement": ""
+                },
+                {
+                    "name": "Psssata",
+                    "measurement": "80g"
+                },
+                {
+                    "name": "Mozzarella",
+                    "measurement": "70g"
+                },
+                {
+                    "name": "Peeled and Sliced Oregano",
+                    "measurement": ""
+                },
+                {
+                    "name": "Leaves Basil",
+                    "measurement": ""
+                },
+                {
+                    "name": "Pinch Black Pepper",
+                    "measurement": ""
+                }
+            ],
+            "instructions": "1. Preheat the oven to 230\u0622\u00b0C. 2. Add the sugar and crumble the fresh yeast into warm water. 3. Allow the mixture to stand for 10 \u00e2\u20ac\u201c 15 minutes in a warm place (we find a windowsill on a sunny day works best) until froth develops on the surface. 4. Sift the flour and salt into a large mixing bowl, make a well in the middle and pour in the yeast mixture and olive oil. 5. Lightly flour your hands, and slowly mix the ingredients together until they bind. 6. Generously dust your surface with flour. 7. Throw down the dough and begin kneading for 10 minutes until smooth, silky and soft. 8. Place in a lightly oiled, non-stick baking tray (we use a round one, but any shape will do!). 9. Spread the passata on top making sure you go to the edge. 10. Evenly place the mozzarella (or other cheese) on top, season with the oregano and black pepper, then drizzle with a little olive oil. 11. Cook in the oven for 10 \u00e2\u20ac\u201c 12 minutes until the cheese slightly colours. 12. When ready, place the basil leaf on top and tuck in!",
+            "time": "40 minutes",
+            "cuisine": "Italian",
+            "imgLink": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg"
+        },
+        {
+            "id": "34039",
+            "recipe_name": "Szechuan Beef",
+            "category_id": 1,
+            "categoryName": "Meat",
+            "ingredients": [
+                {
+                    "name": "Beaf",
+                    "measurement": "1/2 lb"
+                },
+                {
+                    "name": "Salt",
+                    "measurement": "1/2 tsp"
+                },
+                {
+                    "name": "Sesame Seed Oil",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Pepper",
+                    "measurement": "1 pinch"
+                },
+                {
+                    "name": "Egg White",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Starch",
+                    "measurement": "3 tsp"
+                },
+                {
+                    "name": "Oil",
+                    "measurement": "4 tsp"
+                },
+                {
+                    "name": "Ginger",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Garlic",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Onion",
+                    "measurement": "3/4 cup"
+                },
+                {
+                    "name": "carrots",
+                    "measurement": "1/2 cup"
+                }
+            ],
+            "instructions": "STEP 1 - MARINATING THE BEEF: In a bowl, add the beef, salt, sesame seed oil, white pepper, egg white, 2 Tablespoons of corn starch, and 1 Tablespoon of oil. STEP 2 - STIR FRY: First, cook the beef by adding 2 Tablespoons of oil until the beef is golden brown. Set the beef aside. In a wok, add 1 Tablespoon of oil, minced ginger, minced garlic, and stir-fry for a few seconds. Next, add all of the vegetables and then add sherry cooking wine and 1 cup of water. To make the sauce, add oyster sauce, hot pepper sauce, and sugar. Add the cooked beef and 1 spoon of soy sauce. To thicken the sauce, whisk together 1 Tablespoon of cornstarch and 2 Tablespoons of water in a bowl and slowly add to your stir-fry until it's the right thickness.",
+            "time": "50 minutes",
+            "cuisine": "Japanese",
+            "imgLink": "https://www.themealdb.com/images/media/meals/1529443236.jpg"
+        },
+        {
+            "id": "34040",
+            "recipe_name": "Japanese gohan rice",
+            "category_id": 4,
+            "categoryName": "Side",
+            "ingredients": [
+                {
+                    "name": "Sushi Rice",
+                    "measurement": "300g"
+                },
+                {
+                    "name": "Mirin",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Garnish Pickle Juice",
+                    "measurement": ""
+                },
+                {
+                    "name": "Garnish Spring Onions",
+                    "measurement": ""
+                }
+            ],
+            "instructions": "STEP 1: Rinsing and soaking your rice is key to achieving the perfect texture. Measure the rice into a bowl, cover with cold water, then use your fingers to massage the grains of rice \u00e2\u20ac\u201c the water will become cloudy. Drain and rinse again with fresh water. Repeat five more times until the water stays clear. STEP 2: Tip the rinsed rice into a saucepan with 400ml water, or 200ml dashi and 200ml water, bring to the boil, then turn down the heat to a low simmer, cover with a tight-fitting lid with a steam hole and cook for 15 mins. Remove from the heat and leave to sit for another 15 mins, then stir through the mirin. Remove the lid and give it a good stir. Serve with any or all of the optional toppings.",
+            "time": "40 minutes",
+            "cuisine": "Chinese",
+            "imgLink": "https://www.themealdb.com/images/media/meals/kw92t41604181871.jpg"
+        },
+        {
+            "id": "34041",
+            "recipe_name": "Chicken Karaage",
+            "category_id": 1,
+            "categoryName": "Chicken",
+            "ingredients": [
+                {
+                    "name": "Boneless skin Chicken thigh",
+                    "measurement": "450g"
+                },
+                {
+                    "name": "Ginger",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "clove garlic",
+                    "measurement": "1"
+                },
+                {
+                    "name": "Soy souce",
+                    "measurement": "2 tsp"
+                },
+                {
+                    "name": "sake",
+                    "measurement": "1 tsp"
+                },
+                {
+                    "name": "Granulated suger",
+                    "measurement": "2 tsp"
+                },
+                {
+                    "name": "potato starch",
+                    "measurement": "1/3 up"
+                }
+            ],
+            "instructions": "Add the ginger, garlic, soy sauce, sake, and sugar to a bowl and whisk to combine. Add the chicken, then stir to coat evenly. Cover and refrigerate for at least 1 hour. Add 1 inch of vegetable oil to a heavy-bottomed pot and heat until the oil reaches 360 degrees F. Line a wire rack with 2 sheets of paper towels and get your tongs out. Put the potato starch in a bowl. Add a handful of chicken to the potato starch and toss to coat each piece evenly. Fry the karaage in batches until the exterior is a medium brown and the chicken is cooked through. Transfer the fried chicken to the paper towel-lined rack. If you want the karaage to stay crispy longer, you can fry the chicken a second time until it's a darker color after it's cooled off once. Serve with lemon wedges.",
+            "time": "40 minutes",
+            "cuisine": "Japanese",
+            "imgLink": "https://www.themealdb.com/images/media/meals/tyywsw1505930373.jpg"
         }
     ]
 }
