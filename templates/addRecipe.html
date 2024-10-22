@@ -21,8 +21,7 @@ Home - My App
             <h2>Recipe Form</h2>
 
             <form id="recipeForm" enctype="multipart/form-data" action="/addrecipe" method="POST">
-
-                <!-- Hidden field for recipe ID to differentiate between add and update -->
+                <!-- hidden id to pass it form js to back to save in new recipe  -->
                 <input type="hidden" name="id" id="recipe_id">
 
                 <label class="recipeName">Recipe Name:</label><br>
@@ -47,7 +46,7 @@ Home - My App
                 <div id="ingredients">
                     <div class="ingredient">
                         <input type="text" name="ingredientName[]" placeholder="Ingredient Name" required>
-                        <input type="text" name="ingredientMeasurement[]" placeholder="Measurement" required>
+                        <input type="text" name="ingredientMeasurement[]" placeholder="ex:300g, 2 tsp, 1cup" required>
                         <button type="button" class="remove-ingredient" style="display: none;"
                             onclick="removeIngredient(this)">Remove</button>
                     </div>
@@ -59,12 +58,12 @@ Home - My App
                 <textarea id="instructions" name="instructions" rows="4" required></textarea><br><br>
 
                 <label for="time">Time:</label><br>
-                <input type="text" id="time" name="time" required><br><br>
+                <input type="number" id="time" name="time" placeholder="Enter how many minutes (numbers only)"
+                    required><br><br>
+
 
                 <label for="photo">Upload Photo:</label><br>
                 <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
-
-                <!-- The submit button will change text dynamically -->
                 <button type="submit" id="submitButton">Submit Recipe</button>
             </form>
         </div>

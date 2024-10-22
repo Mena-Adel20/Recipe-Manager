@@ -14,13 +14,14 @@ function removeIngredient(button) {
   button.parentNode.remove();
 }
 if (!localStorage.getItem("last_id")) {
-  localStorage.setItem("last_id", "34036");
+  localStorage.setItem("last_id", "34042");
 }
 
 document
   .getElementById("recipeForm")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission for now
+
     // Increment and save ID
     let currentId = parseInt(localStorage.getItem("last_id"));
     let newId = currentId + 1;

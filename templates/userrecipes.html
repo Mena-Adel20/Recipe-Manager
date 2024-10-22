@@ -52,7 +52,10 @@ your recipes
 
         {% endfor %}
         {% else %}
-        <p>No recipes found.</p>
+        <div class="placeholder">
+            <img src="../static/images/back.png" style="width: 45%;">
+            <p> No Recipe Found </p>
+        </div>
         {% endif %}
     </div>
     <div id="deleteModal" class="modal">
