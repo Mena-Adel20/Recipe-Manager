@@ -42,7 +42,8 @@ class RecipeManager:
                     return r
         return None
 #************************************************************************************
-
+#function to update recipe take all data from back then update all values that changes and save it
+#if the user change the image it first delete the old image from the local and then save the new image
     def update_recipe(self, recipe_id, recipe_data, photo_filename=None):
         data = self.db.load_json(self.db.recipe_file)
         for recipe in data['recipes']:

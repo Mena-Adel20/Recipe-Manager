@@ -14,7 +14,7 @@ class UserManager:
 
         if any(user['email'] == email for user in data['users']):
             return 'Email already exists. Please use a different email address.'
-
+#creat new object for user 
         new_user = {
             "email": email,
             "pass": password,
@@ -22,13 +22,14 @@ class UserManager:
             "date": datetime.now().strftime("%Y-%m-%d"),
             "recipes": []
         }
+        #save it in json
         data['users'].append(new_user)
         self.db.save_json(self.db.user_file, data)
         return None
 
 #************************************************************************************
 
-    # save recipe id to user
+    # save recipe id to user (each user has his own list of recipes which he added it)
     def add_recipe_to_user(self, email, recipe_id):
         data = self.db.load_json(self.db.user_file)
         #find the user that add recipe and add id of recipe in his list of recipes 
@@ -38,7 +39,7 @@ class UserManager:
                 break
         self.db.save_json(self.db.user_file, data)
 #************************************************************************************
-
+# function to get the recipe that this user add them in website from the list of 
     def get_user_recipes(self, email):
         user_data = self.db.load_json(self.db.user_file)
         recipe_data = self.db.load_json(self.db.recipe_file)
