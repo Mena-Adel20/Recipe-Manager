@@ -5,7 +5,7 @@ Foodie website for discovering, and sharing recipes. With easy-to-follow instruc
 - What does it do?
   Example: "This is a web project which allow user know how can prepare recipe. and user can update his recipe"
 - What is the "new feature" which you have implemented that we haven't seen before?  
-  Example: "reading from json file","adding to json file "sending values to the route to use it", "deleting from file" , "using jinja to display elemnts", "filter by two values".
+  Example: "reading from json file","adding to json file user can add new recipe or update recipe", "sending values to the route to use it", "deleting from file user can delete his recipes" , "using jinja to display elemnts", "filter by two values".
 
 ## Prerequisites
 
