@@ -54,7 +54,7 @@ class RecipeManager:
                     "cuisine": recipe_data['cuisine'],
                     "ingredients": recipe_data['ingredients'],
                     "instructions": recipe_data['instructions'],
-                    "time": recipe_data['time']
+                    "time": recipe_data['time']+" minutes"
                 })
                 if photo_filename:
                     photo_file_path = os.path.join('static', 'uploads', 
