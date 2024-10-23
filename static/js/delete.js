@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const deleteForms = document.querySelectorAll(
+    // Select all forms with an action that starts with '/delete-recipe/'
     'form[action^="/delete-recipe/"]'
   );
   const modal = document.getElementById("deleteModal");
   const confirmDelete = document.getElementById("confirmDelete");
   const cancelDelete = document.getElementById("cancelDelete");
+  // Variable to keep track of the form to be deleted
   let currentForm = null;
 
   deleteForms.forEach(function (form) {
@@ -17,10 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   confirmDelete.addEventListener("click", function () {
     if (currentForm) {
+      // Submit the form if the user confirms deletion
+
       currentForm.submit();
     }
   });
-
+  // When the "Cancel" button is clicked
+  // Hide the delete confirmation modal
   cancelDelete.addEventListener("click", function () {
     modal.style.display = "none";
   });

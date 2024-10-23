@@ -6,8 +6,16 @@
             "user": "Mena",
             "date": "2024-10-22",
             "recipes": [
-                "34043"
+                "34043",
+                "34044"
             ]
+        },
+        {
+            "email": "menaadel1276@gmail.com",
+            "pass": "1234567",
+            "user": "Mena",
+            "date": "2024-10-23",
+            "recipes": []
         }
     ]
 }

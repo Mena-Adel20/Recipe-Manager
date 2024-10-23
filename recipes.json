@@ -1103,6 +1103,33 @@
             "instructions": "Put the flour, eggs, milk, 1 tbsp oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter.\r\nSet aside for 30 mins to rest if you have time, or start cooking straight away.\r\nSet a medium frying pan or cr\u00eape pan over a medium heat and carefully wipe it with some oiled kitchen paper.\r\nWhen hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you go.\r\nServe with lemon wedges and sugar, or your favourite filling.\r\nOnce cold, you can layer the pancakes between baking parchment, then wrap in cling film and freeze for up to 2 months.\r\n\r\n",
             "time": "15 minutes",
             "imgLink": "../static/uploads/pancake.jpg"
+        },
+        {
+            "id": "34044",
+            "recipe_name": " chicken & halloumi burgers",
+            "categoryName": "Miscellaneous",
+            "cuisine": "American",
+            "ingredients": [
+                {
+                    "name": "Chicken Breasts",
+                    "measurement": "2"
+                },
+                {
+                    "name": "oil ",
+                    "measurement": "1 tbsp "
+                },
+                {
+                    "name": "Hotsauce",
+                    "measurement": "4 tbsp"
+                },
+                {
+                    "name": "Cheese",
+                    "measurement": "250g"
+                }
+            ],
+            "instructions": "STEP 1 Put the chicken breasts between two pieces of baking parchment and use a rolling pin to gently bash them until they are approximately 1cm thick.\r\nCut each chicken breast into two even pieces.\r\nSTEP 2 If you're using a frying pan, heat two frying pans over medium-high heat, with one of them containing oil.\r\nFry the chicken in the oiled pan for 3-4 mins on each side until they are cooked through.\r\nSeason the chicken, reduce the heat, drizzle in the chilli sauce and half of the lemon juice, and cook for an additional 1-2 mins until the sauce is reduced.\r\nRemove the chicken from the heat.\r\nSTEP 3 If you're using an air-fryer, preheat it to 180C for 4 mins.\r\nAdd the chicken to the air-fryer and cook for 12 mins.\r\nDrizzle over the chilli sauce and half the lemon juice and cook for an additional 1-2 mins until the chicken is cooked through and the sauce is reduced.\r\nRemove the chicken and keep it warm.\r\nSTEP 4 While the chicken is cooking, toast the buns in the dry frying pan for 30 seconds.\r\nTransfer them to a plate.\r\nIf you're using an air fryer, put the buns in the air fryer for 1-2 mins until they are warm.\r\nIncrease the air fryer temperature to 200C.\r\nAdd the halloumi to the air fryer basket and cook for 10 mins, turning halfway through, until it's golden.\r\nToss the cabbage with the mayo and the remaining lemon juice.\r\nSTEP 5 Spoon the hummus (or dip of your choice) into the toasted buns, then top with the rocket, chilli chicken, halloumi, and peppers.\r\nDrizzle with a little more chilli sauce, spoon over the cabbage, season with black pepper, and top with the bun lids.\r\nServe with any extra cabbage on the side or a green salad.\r\n",
+            "time": "15 minutes",
+            "imgLink": "../static/uploads/burger.jpg"
         }
     ]
 }
